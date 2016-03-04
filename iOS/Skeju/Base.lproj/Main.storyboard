@@ -88,18 +88,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOh-R3-55B">
-                                <rect key="frame" x="20" y="686" width="46" height="30"/>
-                                <state key="normal" title="Friend"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOh-R3-55B">
+                                <rect key="frame" x="20" y="669" width="72" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <inset key="titleEdgeInsets" minX="-30" minY="0.0" maxX="0.0" maxY="-36"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="-65" maxY="0.0"/>
+                                <state key="normal" title="Find Friend" image="first">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <segue destination="71j-sz-uy5" kind="presentation" id="bBj-j7-d7B"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xoW-Ne-8ca">
-                                <rect key="frame" x="348" y="686" width="46" height="30"/>
-                                <state key="normal" title="Time"/>
-                                <connections>
-                                    <segue destination="z8C-Tk-9OT" kind="presentation" id="mG3-aw-1XD"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calendar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUM-TM-NU8">
@@ -122,6 +120,18 @@
                                 <state key="normal" title="Log out"/>
                                 <connections>
                                     <action selector="logoutClicked:" destination="SOG-wn-z1B" eventType="touchUpInside" id="Mc1-qd-9zp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xoW-Ne-8ca">
+                                <rect key="frame" x="306" y="669" width="88" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <inset key="titleEdgeInsets" minX="-30" minY="0.0" maxX="0.0" maxY="-36"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="-85" maxY="0.0"/>
+                                <state key="normal" title="Schedule Time" image="second">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="z8C-Tk-9OT" kind="presentation" id="mG3-aw-1XD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -164,6 +174,27 @@
                                     <segue destination="SOG-wn-z1B" kind="presentation" id="S2x-sa-bpb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="teg-qb-9o5">
+                                <rect key="frame" x="306" y="681" width="88" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <inset key="titleEdgeInsets" minX="-30" minY="0.0" maxX="0.0" maxY="-36"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="-85" maxY="0.0"/>
+                                <state key="normal" title="Schedule Time" image="second">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="z8C-Tk-9OT" kind="presentation" id="yd4-5F-XXV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGM-yG-H2G">
+                                <rect key="frame" x="20" y="681" width="72" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <inset key="titleEdgeInsets" minX="-30" minY="0.0" maxX="0.0" maxY="-36"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="-65" maxY="0.0"/>
+                                <state key="normal" title="Find Friend" image="first">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -199,6 +230,27 @@
                                     <segue destination="SOG-wn-z1B" kind="presentation" id="ra4-q9-PA6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDD-bj-s7k">
+                                <rect key="frame" x="20" y="669" width="72" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <inset key="titleEdgeInsets" minX="-30" minY="0.0" maxX="0.0" maxY="-36"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="-65" maxY="0.0"/>
+                                <state key="normal" title="Find Friend" image="first">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="71j-sz-uy5" kind="presentation" id="8PP-dH-clX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zU0-cN-CsQ">
+                                <rect key="frame" x="306" y="669" width="88" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <inset key="titleEdgeInsets" minX="-30" minY="0.0" maxX="0.0" maxY="-36"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="-85" maxY="0.0"/>
+                                <state key="normal" title="Schedule Time" image="second">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -230,7 +282,13 @@
             <point key="canvasLocation" x="801" y="-363"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="00K-z2-yqm"/>
+        <segue reference="S2x-sa-bpb"/>
+        <segue reference="8PP-dH-clX"/>
+        <segue reference="yd4-5F-XXV"/>
     </inferredMetricsTieBreakers>
 </document>

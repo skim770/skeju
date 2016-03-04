@@ -11,6 +11,7 @@
 		6111E7271C8929BB0021D046 /* SearchByFriendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6111E7261C8929BB0021D046 /* SearchByFriendVC.swift */; };
 		6111E7291C8929C90021D046 /* SearchByTimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6111E7281C8929C90021D046 /* SearchByTimeVC.swift */; };
 		6111E72B1C8929D90021D046 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6111E72A1C8929D90021D046 /* HomeVC.swift */; };
+		6111E72F1C89E1850021D046 /* cal.png in Resources */ = {isa = PBXBuildFile; fileRef = 6111E72E1C89E1850021D046 /* cal.png */; };
 		A79B50861C7636E600E61787 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B50851C7636E600E61787 /* AppDelegate.swift */; };
 		A79B508D1C7636E600E61787 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79B508B1C7636E600E61787 /* Main.storyboard */; };
 		A79B508F1C7636E600E61787 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A79B508E1C7636E600E61787 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 		6111E7261C8929BB0021D046 /* SearchByFriendVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByFriendVC.swift; sourceTree = "<group>"; };
 		6111E7281C8929C90021D046 /* SearchByTimeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByTimeVC.swift; sourceTree = "<group>"; };
 		6111E72A1C8929D90021D046 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		6111E72E1C89E1850021D046 /* cal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cal.png; sourceTree = "<group>"; };
 		A79B50821C7636E600E61787 /* Skeju.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skeju.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A79B50851C7636E600E61787 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A79B508C1C7636E600E61787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		A79B50841C7636E600E61787 /* Skeju */ = {
 			isa = PBXGroup;
 			children = (
+				6111E72E1C89E1850021D046 /* cal.png */,
 				A79B50851C7636E600E61787 /* AppDelegate.swift */,
 				A79B508B1C7636E600E61787 /* Main.storyboard */,
 				A79B508E1C7636E600E61787 /* Assets.xcassets */,
@@ -240,6 +243,7 @@
 			files = (
 				A79B50921C7636E600E61787 /* LaunchScreen.storyboard in Resources */,
 				A79B508F1C7636E600E61787 /* Assets.xcassets in Resources */,
+				6111E72F1C89E1850021D046 /* cal.png in Resources */,
 				A79B508D1C7636E600E61787 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

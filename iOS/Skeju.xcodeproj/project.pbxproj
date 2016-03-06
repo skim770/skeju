@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6111E7251C89299D0021D046 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6111E7241C89299D0021D046 /* LoginVC.swift */; };
+		6111E7271C8929BB0021D046 /* SearchByFriendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6111E7261C8929BB0021D046 /* SearchByFriendVC.swift */; };
+		6111E7291C8929C90021D046 /* SearchByTimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6111E7281C8929C90021D046 /* SearchByTimeVC.swift */; };
+		6111E72B1C8929D90021D046 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6111E72A1C8929D90021D046 /* HomeVC.swift */; };
+		6111E72F1C89E1850021D046 /* cal.png in Resources */ = {isa = PBXBuildFile; fileRef = 6111E72E1C89E1850021D046 /* cal.png */; };
 		A79B50861C7636E600E61787 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B50851C7636E600E61787 /* AppDelegate.swift */; };
-		A79B50881C7636E600E61787 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B50871C7636E600E61787 /* FirstViewController.swift */; };
-		A79B508A1C7636E600E61787 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B50891C7636E600E61787 /* SecondViewController.swift */; };
 		A79B508D1C7636E600E61787 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79B508B1C7636E600E61787 /* Main.storyboard */; };
 		A79B508F1C7636E600E61787 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A79B508E1C7636E600E61787 /* Assets.xcassets */; };
 		A79B50921C7636E600E61787 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79B50901C7636E600E61787 /* LaunchScreen.storyboard */; };
@@ -35,10 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6111E7241C89299D0021D046 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		6111E7261C8929BB0021D046 /* SearchByFriendVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByFriendVC.swift; sourceTree = "<group>"; };
+		6111E7281C8929C90021D046 /* SearchByTimeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByTimeVC.swift; sourceTree = "<group>"; };
+		6111E72A1C8929D90021D046 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		6111E72E1C89E1850021D046 /* cal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cal.png; sourceTree = "<group>"; };
 		A79B50821C7636E600E61787 /* Skeju.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skeju.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A79B50851C7636E600E61787 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A79B50871C7636E600E61787 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		A79B50891C7636E600E61787 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		A79B508C1C7636E600E61787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A79B508E1C7636E600E61787 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A79B50911C7636E600E61787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,13 +105,16 @@
 		A79B50841C7636E600E61787 /* Skeju */ = {
 			isa = PBXGroup;
 			children = (
+				6111E72E1C89E1850021D046 /* cal.png */,
 				A79B50851C7636E600E61787 /* AppDelegate.swift */,
-				A79B50871C7636E600E61787 /* FirstViewController.swift */,
-				A79B50891C7636E600E61787 /* SecondViewController.swift */,
 				A79B508B1C7636E600E61787 /* Main.storyboard */,
 				A79B508E1C7636E600E61787 /* Assets.xcassets */,
 				A79B50901C7636E600E61787 /* LaunchScreen.storyboard */,
 				A79B50931C7636E600E61787 /* Info.plist */,
+				6111E72A1C8929D90021D046 /* HomeVC.swift */,
+				6111E7241C89299D0021D046 /* LoginVC.swift */,
+				6111E7261C8929BB0021D046 /* SearchByFriendVC.swift */,
+				6111E7281C8929C90021D046 /* SearchByTimeVC.swift */,
 			);
 			path = Skeju;
 			sourceTree = "<group>";
@@ -196,6 +205,7 @@
 				TargetAttributes = {
 					A79B50811C7636E600E61787 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = J977KTYRH9;
 					};
 					A79B50971C7636E600E61787 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -234,6 +244,7 @@
 			files = (
 				A79B50921C7636E600E61787 /* LaunchScreen.storyboard in Resources */,
 				A79B508F1C7636E600E61787 /* Assets.xcassets in Resources */,
+				6111E72F1C89E1850021D046 /* cal.png in Resources */,
 				A79B508D1C7636E600E61787 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,9 +270,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A79B508A1C7636E600E61787 /* SecondViewController.swift in Sources */,
+				6111E7291C8929C90021D046 /* SearchByTimeVC.swift in Sources */,
+				6111E72B1C8929D90021D046 /* HomeVC.swift in Sources */,
+				6111E7251C89299D0021D046 /* LoginVC.swift in Sources */,
 				A79B50861C7636E600E61787 /* AppDelegate.swift in Sources */,
-				A79B50881C7636E600E61787 /* FirstViewController.swift in Sources */,
+				6111E7271C8929BB0021D046 /* SearchByFriendVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,10 +414,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Skeju/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cs4261.Skeju;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -412,10 +428,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Skeju/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cs4261.Skeju;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -486,6 +505,7 @@
 				A79B50AE1C7636E600E61787 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A79B50AF1C7636E600E61787 /* Build configuration list for PBXNativeTarget "SkejuTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +514,7 @@
 				A79B50B11C7636E600E61787 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A79B50B21C7636E600E61787 /* Build configuration list for PBXNativeTarget "SkejuUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +523,7 @@
 				A79B50B41C7636E600E61787 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

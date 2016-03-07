@@ -66,7 +66,7 @@
                                 </state>
                                 <connections>
                                     <action selector="loginBtnTouchUpInside:" destination="Od2-3Z-o2u" eventType="touchUpInside" id="j6f-gd-waj"/>
-                                    <segue destination="ICI-Ur-DkP" kind="show" id="3Xz-FE-Gby"/>
+                                    <segue destination="ICI-Ur-DkP" kind="show" id="3sX-6j-3L7"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tol-pJ-jnU">
@@ -575,7 +575,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="pZi-Iv-e0t">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ICI-Ur-DkP" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ICI-Ur-DkP" customClass="TabBarController" customModule="Skeju" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="ba2-yN-AeG">
                         <autoresizingMask key="autoresizingMask"/>

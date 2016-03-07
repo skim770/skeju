@@ -1,0 +1,6 @@
+framework module Pods_Skeju {
+  umbrella header "Pods-Skeju-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -11,7 +11,6 @@
 		6111E7271C8929BB0021D046 /* SearchByFriendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6111E7261C8929BB0021D046 /* SearchByFriendVC.swift */; };
 		6111E7291C8929C90021D046 /* SearchByTimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6111E7281C8929C90021D046 /* SearchByTimeVC.swift */; };
 		6111E72B1C8929D90021D046 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6111E72A1C8929D90021D046 /* HomeVC.swift */; };
-		6111E72F1C89E1850021D046 /* cal.png in Resources */ = {isa = PBXBuildFile; fileRef = 6111E72E1C89E1850021D046 /* cal.png */; };
 		A79B50861C7636E600E61787 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B50851C7636E600E61787 /* AppDelegate.swift */; };
 		A79B508D1C7636E600E61787 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79B508B1C7636E600E61787 /* Main.storyboard */; };
 		A79B508F1C7636E600E61787 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A79B508E1C7636E600E61787 /* Assets.xcassets */; };
@@ -26,6 +25,9 @@
 		A7E270E11C8D1F0000BDCD4E /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E270DA1C8D1F0000BDCD4E /* FBSDKMessengerShareKit.framework */; };
 		A7E270E21C8D1F0000BDCD4E /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E270DB1C8D1F0000BDCD4E /* FBSDKShareKit.framework */; };
 		A7E270E41C8D1F9D00BDCD4E /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E270E31C8D1F9D00BDCD4E /* LoginController.swift */; };
+		A7E270E61C8D392300BDCD4E /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E270E51C8D392300BDCD4E /* CalendarController.swift */; };
+		A7E270E81C8D3C6100BDCD4E /* FindPeopleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E270E71C8D3C6100BDCD4E /* FindPeopleController.swift */; };
+		A7E270EA1C8D3C6D00BDCD4E /* ScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E270E91C8D3C6D00BDCD4E /* ScheduleController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +52,6 @@
 		6111E7261C8929BB0021D046 /* SearchByFriendVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByFriendVC.swift; sourceTree = "<group>"; };
 		6111E7281C8929C90021D046 /* SearchByTimeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByTimeVC.swift; sourceTree = "<group>"; };
 		6111E72A1C8929D90021D046 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		6111E72E1C89E1850021D046 /* cal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cal.png; sourceTree = "<group>"; };
 		A79B50821C7636E600E61787 /* Skeju.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skeju.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A79B50851C7636E600E61787 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A79B508C1C7636E600E61787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -71,6 +72,9 @@
 		A7E270DA1C8D1F0000BDCD4E /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
 		A7E270DB1C8D1F0000BDCD4E /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		A7E270E31C8D1F9D00BDCD4E /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		A7E270E51C8D392300BDCD4E /* CalendarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarController.swift; sourceTree = "<group>"; };
+		A7E270E71C8D3C6100BDCD4E /* FindPeopleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindPeopleController.swift; sourceTree = "<group>"; };
+		A7E270E91C8D3C6D00BDCD4E /* ScheduleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +132,6 @@
 		A79B50841C7636E600E61787 /* Skeju */ = {
 			isa = PBXGroup;
 			children = (
-				6111E72E1C89E1850021D046 /* cal.png */,
 				A79B50851C7636E600E61787 /* AppDelegate.swift */,
 				A79B508B1C7636E600E61787 /* Main.storyboard */,
 				A79B508E1C7636E600E61787 /* Assets.xcassets */,
@@ -139,6 +142,9 @@
 				6111E7261C8929BB0021D046 /* SearchByFriendVC.swift */,
 				6111E7281C8929C90021D046 /* SearchByTimeVC.swift */,
 				A7E270E31C8D1F9D00BDCD4E /* LoginController.swift */,
+				A7E270E51C8D392300BDCD4E /* CalendarController.swift */,
+				A7E270E71C8D3C6100BDCD4E /* FindPeopleController.swift */,
+				A7E270E91C8D3C6D00BDCD4E /* ScheduleController.swift */,
 			);
 			path = Skeju;
 			sourceTree = "<group>";
@@ -291,7 +297,6 @@
 				A79B50921C7636E600E61787 /* LaunchScreen.storyboard in Resources */,
 				A7E270DD1C8D1F0000BDCD4E /* FacebookSDKStrings.bundle in Resources */,
 				A79B508F1C7636E600E61787 /* Assets.xcassets in Resources */,
-				6111E72F1C89E1850021D046 /* cal.png in Resources */,
 				A79B508D1C7636E600E61787 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,10 +324,13 @@
 			files = (
 				6111E7291C8929C90021D046 /* SearchByTimeVC.swift in Sources */,
 				A7E270E41C8D1F9D00BDCD4E /* LoginController.swift in Sources */,
+				A7E270EA1C8D3C6D00BDCD4E /* ScheduleController.swift in Sources */,
 				6111E72B1C8929D90021D046 /* HomeVC.swift in Sources */,
+				A7E270E61C8D392300BDCD4E /* CalendarController.swift in Sources */,
 				6111E7251C89299D0021D046 /* LoginVC.swift in Sources */,
 				A79B50861C7636E600E61787 /* AppDelegate.swift in Sources */,
 				6111E7271C8929BB0021D046 /* SearchByFriendVC.swift in Sources */,
+				A7E270E81C8D3C6100BDCD4E /* FindPeopleController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

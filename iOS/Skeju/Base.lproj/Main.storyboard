@@ -66,6 +66,7 @@
                                 </state>
                                 <connections>
                                     <action selector="loginBtnTouchUpInside:" destination="Od2-3Z-o2u" eventType="touchUpInside" id="j6f-gd-waj"/>
+                                    <segue destination="ICI-Ur-DkP" kind="show" id="3Xz-FE-Gby"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tol-pJ-jnU">
@@ -203,7 +204,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dHB-58-RhT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="915" y="1362"/>
+            <point key="canvasLocation" x="959" y="1996"/>
         </scene>
         <!--Login-->
         <scene sceneID="Xf7-we-r1q">
@@ -275,6 +276,96 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PCY-UK-83u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1475" y="604"/>
+        </scene>
+        <!--Calendar Controller-->
+        <scene sceneID="kHG-M1-RhQ">
+            <objects>
+                <viewController title="Calendar Controller" id="Iu8-Vf-lAB" customClass="CalendarController" customModule="Skeju" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sh1-DT-ZcH"/>
+                        <viewControllerLayoutGuide type="bottom" id="RHh-Sq-Oh8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dOi-i4-asv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="KWQ-Wu-edQ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KWQ-Wu-edQ" firstAttribute="leading" secondItem="dOi-i4-asv" secondAttribute="leadingMargin" constant="-20" id="4VV-Zi-6BQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KWQ-Wu-edQ" secondAttribute="trailing" constant="-20" id="7WM-xb-L5G"/>
+                            <constraint firstItem="KWQ-Wu-edQ" firstAttribute="top" secondItem="dOi-i4-asv" secondAttribute="topMargin" id="N0e-2c-sWg"/>
+                            <constraint firstItem="KWQ-Wu-edQ" firstAttribute="bottom" secondItem="dOi-i4-asv" secondAttribute="bottomMargin" id="fbU-JL-BZe"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="CalendarIcon" id="xdl-v7-7Nu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WKQ-CP-gbd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2545" y="1216"/>
+        </scene>
+        <!--Schedule Controller-->
+        <scene sceneID="rIP-Ni-Wlt">
+            <objects>
+                <viewController title="Schedule Controller" id="kd1-kv-le0" customClass="ScheduleController" customModule="Skeju" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TBO-lZ-Aie"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Qo-hk-HEf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g9S-vl-11X">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="6Lv-3P-JZy">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="6Lv-3P-JZy" secondAttribute="trailing" constant="-20" id="8YR-jL-rx1"/>
+                            <constraint firstItem="6Lv-3P-JZy" firstAttribute="bottom" secondItem="g9S-vl-11X" secondAttribute="bottomMargin" id="OVZ-7n-1nB"/>
+                            <constraint firstItem="6Lv-3P-JZy" firstAttribute="leading" secondItem="g9S-vl-11X" secondAttribute="leadingMargin" constant="-20" id="gbM-EI-LUG"/>
+                            <constraint firstItem="6Lv-3P-JZy" firstAttribute="top" secondItem="g9S-vl-11X" secondAttribute="topMargin" id="wOT-ix-LmQ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="2" title="Schedule Time" image="ScheduleIcon" id="oqy-EW-yTl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d8Q-P0-11f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2545" y="2554"/>
+        </scene>
+        <!--Find People Controller-->
+        <scene sceneID="7p8-1H-yu1">
+            <objects>
+                <viewController title="Find People Controller" id="7Kf-Sz-5SH" customClass="FindPeopleController" customModule="Skeju" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TBn-Wx-TQ6"/>
+                        <viewControllerLayoutGuide type="bottom" id="wMw-WM-aMq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hBz-DC-GHr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="hKF-iq-Bwk">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hKF-iq-Bwk" firstAttribute="bottom" secondItem="hBz-DC-GHr" secondAttribute="bottomMargin" id="FmV-ZF-lf6"/>
+                            <constraint firstItem="hKF-iq-Bwk" firstAttribute="leading" secondItem="hBz-DC-GHr" secondAttribute="leadingMargin" constant="-20" id="Sdh-52-X1j"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hKF-iq-Bwk" secondAttribute="trailing" constant="-20" id="bYM-f6-laA"/>
+                            <constraint firstItem="hKF-iq-Bwk" firstAttribute="top" secondItem="hBz-DC-GHr" secondAttribute="topMargin" id="bme-Of-KVS"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="1" title="Find People" image="FindPeopleIcon" id="9gw-8s-RrA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vkd-tY-emd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2545" y="1890"/>
         </scene>
         <!--Home-->
         <scene sceneID="DNI-OC-H4J">
@@ -481,10 +572,32 @@
             </objects>
             <point key="canvasLocation" x="801" y="-363"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="pZi-Iv-e0t">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ICI-Ur-DkP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="ba2-yN-AeG">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Iu8-Vf-lAB" kind="relationship" relationship="viewControllers" id="jeg-EX-PQL"/>
+                        <segue destination="7Kf-Sz-5SH" kind="relationship" relationship="viewControllers" id="wMX-B9-WvI"/>
+                        <segue destination="kd1-kv-le0" kind="relationship" relationship="viewControllers" id="WFu-kO-ShS"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zgf-eu-Nzm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1711" y="1996"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Background" width="540" height="960"/>
+        <image name="CalendarIcon" width="25" height="25"/>
         <image name="FacebookLogo" width="134" height="250"/>
+        <image name="FindPeopleIcon" width="25" height="25"/>
+        <image name="ScheduleIcon" width="25" height="25"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>

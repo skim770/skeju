@@ -30,7 +30,6 @@
 		A7E270E81C8D3C6100BDCD4E /* FindPeopleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E270E71C8D3C6100BDCD4E /* FindPeopleController.swift */; };
 		A7E270EA1C8D3C6D00BDCD4E /* ScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E270E91C8D3C6D00BDCD4E /* ScheduleController.swift */; };
 		D36512AC1F9E62504DE74E19 /* Pods_Skeju.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089B392B592F6E3A95733F6B /* Pods_Skeju.framework */; };
-		FC13094353CC407D99F5DC4E /* Pods_SkejuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A85B50CDBB986C4E1B04DEAF /* Pods_SkejuTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,7 +82,6 @@
 		A7E270E51C8D392300BDCD4E /* CalendarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarController.swift; sourceTree = "<group>"; };
 		A7E270E71C8D3C6100BDCD4E /* FindPeopleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindPeopleController.swift; sourceTree = "<group>"; };
 		A7E270E91C8D3C6D00BDCD4E /* ScheduleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleController.swift; sourceTree = "<group>"; };
-		A85B50CDBB986C4E1B04DEAF /* Pods_SkejuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkejuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3457C69ECCCCB85E17E97F4 /* Pods-Skeju.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skeju.release.xcconfig"; path = "Pods/Target Support Files/Pods-Skeju/Pods-Skeju.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,7 +104,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC13094353CC407D99F5DC4E /* Pods_SkejuTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,7 +183,6 @@
 			children = (
 				A7E270D41C8D1EF200BDCD4E /* FacebookSDK */,
 				089B392B592F6E3A95733F6B /* Pods_Skeju.framework */,
-				A85B50CDBB986C4E1B04DEAF /* Pods_SkejuTests.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";

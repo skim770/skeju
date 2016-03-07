@@ -26,6 +26,8 @@
     
     UILabel *label = [UILabel new];
     label.textAlignment = NSTextAlignmentCenter;
+    label.textColor = [UIColor colorWithRed:98/255.0 green:161/255.0 blue:192/255.0 alpha:1.0];
+    label.font = [UIFont boldSystemFontOfSize:25];
     
     return label;
 }
@@ -56,7 +58,7 @@
             currentMonthIndex += 12;
         }
         
-        text = [[dateFormatter standaloneMonthSymbols][currentMonthIndex - 1] capitalizedString];
+        text = [[dateFormatter standaloneMonthSymbols][currentMonthIndex - 1] uppercaseString];
     }
         
     [(UILabel *)menuItemView setText:text];

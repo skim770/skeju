@@ -22,6 +22,7 @@ class CalendarController: UIViewController, JTCalendarDelegate {
     let screenWidth = UIScreen.mainScreen().bounds.width
     let screenHeight = UIScreen.mainScreen().bounds.height
 
+    var dayPlannerController: DayPlannerController!
     var calendarManager: JTCalendarManager!
     var _dateSelected: NSDate?
     var _eventStore: EKEventStore?
@@ -36,7 +37,7 @@ class CalendarController: UIViewController, JTCalendarDelegate {
         calendarManager.contentView = calendarContentView
         calendarManager.setDate(NSDate())
         
-        let dayPlannerController = DayPlannerController(eventStore: EKEventStore())
+        dayPlannerController = DayPlannerController(eventStore: EKEventStore())
         dayPlannerController.calendar = NSCalendar.currentCalendar()
         
         self.addChildViewController(dayPlannerController)
@@ -85,7 +86,9 @@ class CalendarController: UIViewController, JTCalendarDelegate {
     func calendar(calendar: JTCalendarManager!, didTouchDayView day: UIView!) {
         if let dayView = day as? JTCalendarDayView {
             _dateSelected = dayView.date
-            
+            if let dp = self.dayPlannerController {
+                dp.dayPlannerView.scrollToDate(dayView.date, options: MGCDayPlannerScrollType.init(rawValue: 1), animated: true)
+            }
             dayView.circleView.transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.1, 0.1)
             UIView.transitionWithView(dayView, duration: 0.3, options: UIViewAnimationOptions.AllowAnimatedContent, animations: {
                     dayView.circleView.transform = CGAffineTransformIdentity

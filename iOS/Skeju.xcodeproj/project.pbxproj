@@ -7,13 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6111E7251C89299D0021D046 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6111E7241C89299D0021D046 /* LoginVC.swift */; };
-		6111E7271C8929BB0021D046 /* SearchByFriendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6111E7261C8929BB0021D046 /* SearchByFriendVC.swift */; };
-		6111E7291C8929C90021D046 /* SearchByTimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6111E7281C8929C90021D046 /* SearchByTimeVC.swift */; };
-		6111E72B1C8929D90021D046 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6111E72A1C8929D90021D046 /* HomeVC.swift */; };
 		A71B13861C8D50EA001FA36C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71B13851C8D50EA001FA36C /* TabBarController.swift */; };
 		A71F46361C8E5C72001DFCF5 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71F46351C8E5C72001DFCF5 /* EventKit.framework */; };
 		A71F46381C8E5C79001DFCF5 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71F46371C8E5C79001DFCF5 /* EventKitUI.framework */; };
+		A76CBFAA1C8EDBA1009414E3 /* DayPlannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76CBFA91C8EDBA1009414E3 /* DayPlannerController.swift */; };
 		A79B50861C7636E600E61787 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B50851C7636E600E61787 /* AppDelegate.swift */; };
 		A79B508D1C7636E600E61787 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79B508B1C7636E600E61787 /* Main.storyboard */; };
 		A79B508F1C7636E600E61787 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A79B508E1C7636E600E61787 /* Assets.xcassets */; };
@@ -55,15 +52,12 @@
 		089B392B592F6E3A95733F6B /* Pods_Skeju.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Skeju.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FC967731359CBEEA3AB6943 /* Pods-Skeju.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skeju.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Skeju/Pods-Skeju.debug.xcconfig"; sourceTree = "<group>"; };
 		51C26B378F5ED9F9D62A8251 /* Pods-SkejuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkejuTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SkejuTests/Pods-SkejuTests.release.xcconfig"; sourceTree = "<group>"; };
-		6111E7241C89299D0021D046 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
-		6111E7261C8929BB0021D046 /* SearchByFriendVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByFriendVC.swift; sourceTree = "<group>"; };
-		6111E7281C8929C90021D046 /* SearchByTimeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchByTimeVC.swift; sourceTree = "<group>"; };
-		6111E72A1C8929D90021D046 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		A22E41EEBF36C2531F76EEFA /* Pods-SkejuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkejuTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SkejuTests/Pods-SkejuTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A71B13851C8D50EA001FA36C /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		A71F46351C8E5C72001DFCF5 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		A71F46371C8E5C79001DFCF5 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		A71F46391C8E5C81001DFCF5 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		A76CBFA91C8EDBA1009414E3 /* DayPlannerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayPlannerController.swift; sourceTree = "<group>"; };
 		A79B50821C7636E600E61787 /* Skeju.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skeju.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A79B50851C7636E600E61787 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A79B508C1C7636E600E61787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -154,15 +148,12 @@
 				A79B508E1C7636E600E61787 /* Assets.xcassets */,
 				A79B50901C7636E600E61787 /* LaunchScreen.storyboard */,
 				A79B50931C7636E600E61787 /* Info.plist */,
-				6111E72A1C8929D90021D046 /* HomeVC.swift */,
-				6111E7241C89299D0021D046 /* LoginVC.swift */,
-				6111E7261C8929BB0021D046 /* SearchByFriendVC.swift */,
-				6111E7281C8929C90021D046 /* SearchByTimeVC.swift */,
 				A7E270E31C8D1F9D00BDCD4E /* LoginController.swift */,
 				A7E270E51C8D392300BDCD4E /* CalendarController.swift */,
 				A7E270E71C8D3C6100BDCD4E /* FindPeopleController.swift */,
 				A7E270E91C8D3C6D00BDCD4E /* ScheduleController.swift */,
 				A71B13851C8D50EA001FA36C /* TabBarController.swift */,
+				A76CBFA91C8EDBA1009414E3 /* DayPlannerController.swift */,
 			);
 			path = Skeju;
 			sourceTree = "<group>";
@@ -454,15 +445,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6111E7291C8929C90021D046 /* SearchByTimeVC.swift in Sources */,
 				A7E270E41C8D1F9D00BDCD4E /* LoginController.swift in Sources */,
 				A7E270EA1C8D3C6D00BDCD4E /* ScheduleController.swift in Sources */,
 				A71B13861C8D50EA001FA36C /* TabBarController.swift in Sources */,
-				6111E72B1C8929D90021D046 /* HomeVC.swift in Sources */,
 				A7E270E61C8D392300BDCD4E /* CalendarController.swift in Sources */,
-				6111E7251C89299D0021D046 /* LoginVC.swift in Sources */,
 				A79B50861C7636E600E61787 /* AppDelegate.swift in Sources */,
-				6111E7271C8929BB0021D046 /* SearchByFriendVC.swift in Sources */,
+				A76CBFAA1C8EDBA1009414E3 /* DayPlannerController.swift in Sources */,
 				A7E270E81C8D3C6100BDCD4E /* FindPeopleController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

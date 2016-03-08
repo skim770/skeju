@@ -9,28 +9,40 @@
 import Foundation
 import UIKit
 import JTCalendar
+import CalendarLib
 import EventKit
 import EventKitUI
 
 class CalendarController: UIViewController, JTCalendarDelegate {
+    @IBOutlet var statusBarView: UIView!
     @IBOutlet var calendarMenuView: JTCalendarMenuView!
     @IBOutlet var calendarContentView: JTHorizontalCalendarView!
-    @IBOutlet var statusBarView: UIView!
+    @IBOutlet var dayPlannerContainer: UIView!
     
+    let screenWidth = UIScreen.mainScreen().bounds.width
+    let screenHeight = UIScreen.mainScreen().bounds.height
+
     var calendarManager: JTCalendarManager!
     var _dateSelected: NSDate?
+    var _eventStore: EKEventStore?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         calendarManager = JTCalendarManager()
         calendarManager.delegate = self
         initUI()
-        
+
         calendarManager.menuView = calendarMenuView
         calendarManager.contentView = calendarContentView
         calendarManager.setDate(NSDate())
         
-//        calendarManager.menuView.label
+        let dayPlannerController = DayPlannerController(eventStore: EKEventStore())
+        dayPlannerController.calendar = NSCalendar.currentCalendar()
+        
+        self.addChildViewController(dayPlannerController)
+        self.dayPlannerContainer.addSubview(dayPlannerController.view)
+        dayPlannerController.view.frame = self.dayPlannerContainer.bounds
+        dayPlannerController.didMoveToParentViewController(self)
     }
     
     override func viewDidAppear(animated: Bool) {

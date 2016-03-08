@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10112" systemVersion="15E56a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Od2-3Z-o2u">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10112" systemVersion="15E61b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ICI-Ur-DkP">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10083"/>
@@ -66,7 +66,6 @@
                                 </state>
                                 <connections>
                                     <action selector="loginBtnTouchUpInside:" destination="Od2-3Z-o2u" eventType="touchUpInside" id="j6f-gd-waj"/>
-                                    <segue destination="ICI-Ur-DkP" kind="show" id="3d5-9X-k9m"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tol-pJ-jnU">
@@ -206,77 +205,6 @@
             </objects>
             <point key="canvasLocation" x="959" y="1996"/>
         </scene>
-        <!--Login-->
-        <scene sceneID="Xf7-we-r1q">
-            <objects>
-                <viewController title="Login" id="D45-go-Xl3" customClass="LoginVC" customModule="Skeju" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="yiF-Ff-yP0"/>
-                        <viewControllerLayoutGuide type="bottom" id="lGJ-vt-H2H"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="qix-W3-kCo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Yu-GQ-FdA">
-                                <rect key="frame" x="81" y="176" width="81" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="40U-He-3e6">
-                                <rect key="frame" x="81" y="200" width="253" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oIs-4s-4F7">
-                                <rect key="frame" x="81" y="259" width="253" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOu-xp-Mqy">
-                                <rect key="frame" x="81" y="238" width="81" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="teB-gl-jfW">
-                                <rect key="frame" x="81" y="388" width="253" height="32"/>
-                                <color key="backgroundColor" red="0.21694153346228545" green="0.28951818605703927" blue="0.88395432692307696" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Login with Facebook">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JYh-ho-Agh">
-                                <rect key="frame" x="81" y="312" width="253" height="31"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="loginClicked:" destination="D45-go-Xl3" eventType="touchUpInside" id="29K-UE-HFY"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SKEJU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xB-7g-1Ra">
-                                <rect key="frame" x="140" y="55" width="135" height="70"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <color key="tintColor" white="0.80917051174496646" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                    <connections>
-                        <outlet property="password" destination="oIs-4s-4F7" id="BHl-fb-UHl"/>
-                        <outlet property="username" destination="40U-He-3e6" id="LXG-4n-1Eu"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PCY-UK-83u" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1475" y="604"/>
-        </scene>
         <!--Calendar Controller-->
         <scene sceneID="kHG-M1-RhQ">
             <objects>
@@ -292,6 +220,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="KWQ-Wu-edQ">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F1B-pa-7fY">
+                                <rect key="frame" x="0.0" y="345" width="600" height="255"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yvv-2U-BOa">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
                                 <color key="backgroundColor" red="0.086274509803921567" green="0.086274509803921567" blue="0.086274509803921567" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
@@ -299,20 +231,6 @@
                                     <constraint firstAttribute="height" constant="20" id="UmH-Om-sMV"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HIn-b6-oZh">
-                                <rect key="frame" x="0.0" y="345" width="600" height="255"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="r7g-nR-7UQ">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="r7g-nR-7UQ" id="u7I-1A-guU">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h9a-1l-I8g" customClass="JTCalendarMenuView">
                                 <rect key="frame" x="0.0" y="20" width="600" height="50"/>
                                 <color key="backgroundColor" red="0.086274509803921567" green="0.086274509803921567" blue="0.086274509803921567" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
@@ -330,30 +248,31 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="F1B-pa-7fY" secondAttribute="trailing" constant="-20" id="1kj-mp-wiW"/>
                             <constraint firstItem="KWQ-Wu-edQ" firstAttribute="leading" secondItem="dOi-i4-asv" secondAttribute="leadingMargin" constant="-20" id="4VV-Zi-6BQ"/>
-                            <constraint firstItem="HIn-b6-oZh" firstAttribute="top" secondItem="Arr-7X-Bxz" secondAttribute="bottom" id="6Cp-Hx-obR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="KWQ-Wu-edQ" secondAttribute="trailing" constant="-20" id="7WM-xb-L5G"/>
                             <constraint firstItem="yvv-2U-BOa" firstAttribute="leading" secondItem="dOi-i4-asv" secondAttribute="leadingMargin" constant="-20" id="AZW-5o-fbx"/>
+                            <constraint firstItem="F1B-pa-7fY" firstAttribute="top" secondItem="Arr-7X-Bxz" secondAttribute="bottom" id="CfT-xT-0cz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="h9a-1l-I8g" secondAttribute="trailing" constant="-20" id="Dcw-31-eHL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Arr-7X-Bxz" secondAttribute="trailing" constant="-20" id="Kdh-k2-p5e"/>
                             <constraint firstItem="KWQ-Wu-edQ" firstAttribute="top" secondItem="dOi-i4-asv" secondAttribute="topMargin" id="N0e-2c-sWg"/>
                             <constraint firstItem="Arr-7X-Bxz" firstAttribute="leading" secondItem="dOi-i4-asv" secondAttribute="leadingMargin" constant="-20" id="Oo3-wC-cb3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yvv-2U-BOa" secondAttribute="trailing" constant="-20" id="Vav-oS-dtb"/>
                             <constraint firstItem="yvv-2U-BOa" firstAttribute="top" secondItem="dOi-i4-asv" secondAttribute="topMargin" id="XSV-KE-V7h"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="HIn-b6-oZh" secondAttribute="trailing" constant="-20" id="Xth-1p-qlC"/>
-                            <constraint firstItem="HIn-b6-oZh" firstAttribute="bottom" secondItem="dOi-i4-asv" secondAttribute="bottomMargin" id="YNS-xL-tUU"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="F1B-pa-7fY" secondAttribute="bottom" id="agq-rh-ROk"/>
                             <constraint firstItem="h9a-1l-I8g" firstAttribute="top" secondItem="sh1-DT-ZcH" secondAttribute="bottom" id="b0j-lW-P9l"/>
                             <constraint firstItem="KWQ-Wu-edQ" firstAttribute="bottom" secondItem="dOi-i4-asv" secondAttribute="bottomMargin" id="fbU-JL-BZe"/>
+                            <constraint firstItem="F1B-pa-7fY" firstAttribute="leading" secondItem="dOi-i4-asv" secondAttribute="leadingMargin" constant="-20" id="iiz-YP-JtZ"/>
                             <constraint firstItem="Arr-7X-Bxz" firstAttribute="top" secondItem="h9a-1l-I8g" secondAttribute="bottom" id="oHd-zJ-i8D"/>
                             <constraint firstItem="h9a-1l-I8g" firstAttribute="leading" secondItem="dOi-i4-asv" secondAttribute="leadingMargin" constant="-20" id="pXN-h0-0qU"/>
-                            <constraint firstItem="HIn-b6-oZh" firstAttribute="leading" secondItem="dOi-i4-asv" secondAttribute="leadingMargin" constant="-20" id="zYk-WZ-aZB"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Calendar" image="CalendarIcon" id="xdl-v7-7Nu"/>
                     <connections>
                         <outlet property="calendarContentView" destination="Arr-7X-Bxz" id="plX-5I-cRS"/>
                         <outlet property="calendarMenuView" destination="h9a-1l-I8g" id="VFw-T9-kcK"/>
-                        <outlet property="statusBarView" destination="yvv-2U-BOa" id="n0u-zC-KFc"/>
+                        <outlet property="dayPlannerContainer" destination="F1B-pa-7fY" id="LMu-N8-dLJ"/>
+                        <outlet property="statusBarView" destination="yvv-2U-BOa" id="Bkf-kB-YBS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WKQ-CP-gbd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -420,211 +339,6 @@
             </objects>
             <point key="canvasLocation" x="2545" y="1890"/>
         </scene>
-        <!--Home-->
-        <scene sceneID="DNI-OC-H4J">
-            <objects>
-                <viewController title="Home" id="SOG-wn-z1B" customClass="HomeVC" customModule="Skeju" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Vmn-Wf-8pJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="m5N-H2-X2J"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="6ZS-lN-bXQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOh-R3-55B">
-                                <rect key="frame" x="20" y="669" width="72" height="47"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <inset key="titleEdgeInsets" minX="-30" minY="0.0" maxX="0.0" maxY="-36"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="-65" maxY="0.0"/>
-                                <state key="normal" title="Find Friend" image="first">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="71j-sz-uy5" kind="presentation" id="bBj-j7-d7B"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calendar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUM-TM-NU8">
-                                <rect key="frame" x="170" y="357" width="74" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Not Logged in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXg-Dd-aaj">
-                                <rect key="frame" x="20" y="85" width="113" height="22"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=compact-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="149" y="357" width="116" height="21"/>
-                                </variation>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yiw-4L-iCZ">
-                                <rect key="frame" x="334" y="77" width="60" height="30"/>
-                                <state key="normal" title="Log out"/>
-                                <connections>
-                                    <action selector="logoutClicked:" destination="SOG-wn-z1B" eventType="touchUpInside" id="Mc1-qd-9zp"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xoW-Ne-8ca">
-                                <rect key="frame" x="306" y="669" width="88" height="47"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <inset key="titleEdgeInsets" minX="-30" minY="0.0" maxX="0.0" maxY="-36"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="-85" maxY="0.0"/>
-                                <state key="normal" title="Schedule Time" image="second">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="z8C-Tk-9OT" kind="presentation" id="mG3-aw-1XD"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Skeju" id="NsU-T4-M39"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                    <connections>
-                        <outlet property="username" destination="VXg-Dd-aaj" id="3jB-4o-evv"/>
-                        <segue destination="D45-go-Xl3" kind="presentation" identifier="to_login" id="iUw-46-U6j"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fgq-Ew-tVH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1475" y="-363"/>
-        </scene>
-        <!--Search By FriendVC-->
-        <scene sceneID="hct-el-Dix">
-            <objects>
-                <viewController id="71j-sz-uy5" customClass="SearchByFriendVC" customModule="Skeju" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="udo-In-yM4"/>
-                        <viewControllerLayoutGuide type="bottom" id="RfP-vv-SBb"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="CmZ-Cb-1N7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Friend" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBI-TQ-gAj">
-                                <rect key="frame" x="181" y="357" width="53" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z59-GG-mx4">
-                                <rect key="frame" x="20" y="20" width="46" height="30"/>
-                                <state key="normal" title="Home"/>
-                                <connections>
-                                    <segue destination="SOG-wn-z1B" kind="presentation" id="S2x-sa-bpb"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="teg-qb-9o5">
-                                <rect key="frame" x="306" y="681" width="88" height="47"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <inset key="titleEdgeInsets" minX="-30" minY="0.0" maxX="0.0" maxY="-36"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="-85" maxY="0.0"/>
-                                <state key="normal" title="Schedule Time" image="second">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="z8C-Tk-9OT" kind="presentation" id="yd4-5F-XXV"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGM-yG-H2G">
-                                <rect key="frame" x="20" y="681" width="72" height="47"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <inset key="titleEdgeInsets" minX="-30" minY="0.0" maxX="0.0" maxY="-36"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="-65" maxY="0.0"/>
-                                <state key="normal" title="Find Friend" image="first">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="p95-5D-Jy9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2006" y="-363"/>
-        </scene>
-        <!--Search By TimeVC-->
-        <scene sceneID="unI-jc-Wf0">
-            <objects>
-                <viewController title="Search By TimeVC" id="z8C-Tk-9OT" customClass="SearchByTimeVC" customModule="Skeju" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="tDp-Cy-AK6"/>
-                        <viewControllerLayoutGuide type="bottom" id="qdo-vw-M7f"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="arb-Dq-n74">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tve-Kg-w0f">
-                                <rect key="frame" x="186" y="350" width="42" height="35"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQu-CT-QDO">
-                                <rect key="frame" x="20" y="28" width="46" height="30"/>
-                                <state key="normal" title="Home"/>
-                                <connections>
-                                    <segue destination="SOG-wn-z1B" kind="presentation" id="ra4-q9-PA6"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDD-bj-s7k">
-                                <rect key="frame" x="20" y="669" width="72" height="47"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <inset key="titleEdgeInsets" minX="-30" minY="0.0" maxX="0.0" maxY="-36"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="-65" maxY="0.0"/>
-                                <state key="normal" title="Find Friend" image="first">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="71j-sz-uy5" kind="presentation" id="8PP-dH-clX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zU0-cN-CsQ">
-                                <rect key="frame" x="306" y="669" width="88" height="47"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <inset key="titleEdgeInsets" minX="-30" minY="0.0" maxX="0.0" maxY="-36"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="-85" maxY="0.0"/>
-                                <state key="normal" title="Schedule Time" image="second">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PlI-Sk-Jqa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2006" y="590"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="ZHF-XP-yPr">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LdU-w2-BVz" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XHg-3m-qIv">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="SOG-wn-z1B" kind="relationship" relationship="rootViewController" id="00K-z2-yqm"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Dkg-Dk-48R" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="801" y="-363"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="pZi-Iv-e0t">
             <objects>
@@ -651,12 +365,5 @@
         <image name="FacebookLogo" width="134" height="250"/>
         <image name="FindPeopleIcon" width="25" height="25"/>
         <image name="ScheduleIcon" width="25" height="25"/>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="00K-z2-yqm"/>
-        <segue reference="8PP-dH-clX"/>
-        <segue reference="yd4-5F-XXV"/>
-    </inferredMetricsTieBreakers>
 </document>

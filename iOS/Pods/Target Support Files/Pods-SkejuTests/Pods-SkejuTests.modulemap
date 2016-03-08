@@ -1,6 +1,0 @@
-framework module Pods_SkejuTests {
-  umbrella header "Pods-SkejuTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

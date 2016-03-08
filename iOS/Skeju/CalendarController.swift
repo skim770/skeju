@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 import JTCalendar
+import EventKit
+import EventKitUI
 
 class CalendarController: UIViewController, JTCalendarDelegate {
     @IBOutlet var calendarMenuView: JTCalendarMenuView!

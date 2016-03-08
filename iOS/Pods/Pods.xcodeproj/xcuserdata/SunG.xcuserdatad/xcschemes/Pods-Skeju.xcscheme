@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'B8A41DE92C6027BD7AE733EF'
+               BlueprintIdentifier = 'D849C9434FC9C902265A9810'
                BlueprintName = 'Pods-Skeju'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_Skeju.framework'>

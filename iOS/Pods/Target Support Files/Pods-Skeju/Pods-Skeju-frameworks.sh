@@ -84,8 +84,14 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-Skeju/CalendarLib.framework"
   install_framework "Pods-Skeju/JTCalendar.framework"
+  install_framework "Pods-Skeju/OSCache.framework"
+  install_framework "Pods-Skeju/OrderedDictionary.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-Skeju/CalendarLib.framework"
   install_framework "Pods-Skeju/JTCalendar.framework"
+  install_framework "Pods-Skeju/OSCache.framework"
+  install_framework "Pods-Skeju/OrderedDictionary.framework"
 fi

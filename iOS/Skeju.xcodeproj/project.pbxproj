@@ -12,6 +12,8 @@
 		6111E7291C8929C90021D046 /* SearchByTimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6111E7281C8929C90021D046 /* SearchByTimeVC.swift */; };
 		6111E72B1C8929D90021D046 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6111E72A1C8929D90021D046 /* HomeVC.swift */; };
 		A71B13861C8D50EA001FA36C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71B13851C8D50EA001FA36C /* TabBarController.swift */; };
+		A71F46361C8E5C72001DFCF5 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71F46351C8E5C72001DFCF5 /* EventKit.framework */; };
+		A71F46381C8E5C79001DFCF5 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71F46371C8E5C79001DFCF5 /* EventKitUI.framework */; };
 		A79B50861C7636E600E61787 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B50851C7636E600E61787 /* AppDelegate.swift */; };
 		A79B508D1C7636E600E61787 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79B508B1C7636E600E61787 /* Main.storyboard */; };
 		A79B508F1C7636E600E61787 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A79B508E1C7636E600E61787 /* Assets.xcassets */; };
@@ -59,6 +61,9 @@
 		6111E72A1C8929D90021D046 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		A22E41EEBF36C2531F76EEFA /* Pods-SkejuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkejuTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SkejuTests/Pods-SkejuTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A71B13851C8D50EA001FA36C /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		A71F46351C8E5C72001DFCF5 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		A71F46371C8E5C79001DFCF5 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		A71F46391C8E5C81001DFCF5 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		A79B50821C7636E600E61787 /* Skeju.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skeju.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A79B50851C7636E600E61787 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A79B508C1C7636E600E61787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -90,6 +95,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A71F46381C8E5C79001DFCF5 /* EventKitUI.framework in Frameworks */,
+				A71F46361C8E5C72001DFCF5 /* EventKit.framework in Frameworks */,
 				A7E270DC1C8D1F0000BDCD4E /* Bolts.framework in Frameworks */,
 				A7E270DF1C8D1F0000BDCD4E /* FBSDKCoreKit.framework in Frameworks */,
 				A7E270E21C8D1F0000BDCD4E /* FBSDKShareKit.framework in Frameworks */,
@@ -181,6 +188,9 @@
 		A7E270D31C8D1E6500BDCD4E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A71F46391C8E5C81001DFCF5 /* CloudKit.framework */,
+				A71F46371C8E5C79001DFCF5 /* EventKitUI.framework */,
+				A71F46351C8E5C72001DFCF5 /* EventKit.framework */,
 				A7E270D41C8D1EF200BDCD4E /* FacebookSDK */,
 				089B392B592F6E3A95733F6B /* Pods_Skeju.framework */,
 			);

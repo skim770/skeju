@@ -52,7 +52,7 @@
 		_insetsHeight = 45;
 		_timeColumnWidth = 40;
 		_font = [UIFont boldSystemFontOfSize:12];
-		_timeColor = [UIColor lightGrayColor];
+        _timeColor = [UIColor colorWithRed:225.0/255.0 green:225.0/255.0 blue:225.0/255.0 alpha:1.0];
 		_currentTimeColor = [UIColor redColor];
 		_rounding = 15;
 		

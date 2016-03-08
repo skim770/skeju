@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10112" systemVersion="15E61b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ICI-Ur-DkP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10112" systemVersion="15E61b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Od2-3Z-o2u">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10083"/>
@@ -66,6 +66,7 @@
                                 </state>
                                 <connections>
                                     <action selector="loginBtnTouchUpInside:" destination="Od2-3Z-o2u" eventType="touchUpInside" id="j6f-gd-waj"/>
+                                    <segue destination="ICI-Ur-DkP" kind="show" id="yVo-NF-zsb"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tol-pJ-jnU">
@@ -220,10 +221,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="KWQ-Wu-edQ">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F1B-pa-7fY">
-                                <rect key="frame" x="0.0" y="345" width="600" height="255"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yvv-2U-BOa">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
                                 <color key="backgroundColor" red="0.086274509803921567" green="0.086274509803921567" blue="0.086274509803921567" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
@@ -245,24 +242,28 @@
                                     <constraint firstAttribute="height" constant="275" id="VIW-Kq-smB"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F1B-pa-7fY">
+                                <rect key="frame" x="0.0" y="345" width="600" height="206"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="F1B-pa-7fY" secondAttribute="trailing" constant="-20" id="1kj-mp-wiW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="F1B-pa-7fY" secondAttribute="trailing" constant="-20" id="0fC-UT-8Yt"/>
                             <constraint firstItem="KWQ-Wu-edQ" firstAttribute="leading" secondItem="dOi-i4-asv" secondAttribute="leadingMargin" constant="-20" id="4VV-Zi-6BQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="KWQ-Wu-edQ" secondAttribute="trailing" constant="-20" id="7WM-xb-L5G"/>
                             <constraint firstItem="yvv-2U-BOa" firstAttribute="leading" secondItem="dOi-i4-asv" secondAttribute="leadingMargin" constant="-20" id="AZW-5o-fbx"/>
-                            <constraint firstItem="F1B-pa-7fY" firstAttribute="top" secondItem="Arr-7X-Bxz" secondAttribute="bottom" id="CfT-xT-0cz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="h9a-1l-I8g" secondAttribute="trailing" constant="-20" id="Dcw-31-eHL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Arr-7X-Bxz" secondAttribute="trailing" constant="-20" id="Kdh-k2-p5e"/>
                             <constraint firstItem="KWQ-Wu-edQ" firstAttribute="top" secondItem="dOi-i4-asv" secondAttribute="topMargin" id="N0e-2c-sWg"/>
                             <constraint firstItem="Arr-7X-Bxz" firstAttribute="leading" secondItem="dOi-i4-asv" secondAttribute="leadingMargin" constant="-20" id="Oo3-wC-cb3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yvv-2U-BOa" secondAttribute="trailing" constant="-20" id="Vav-oS-dtb"/>
                             <constraint firstItem="yvv-2U-BOa" firstAttribute="top" secondItem="dOi-i4-asv" secondAttribute="topMargin" id="XSV-KE-V7h"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="F1B-pa-7fY" secondAttribute="bottom" id="agq-rh-ROk"/>
                             <constraint firstItem="h9a-1l-I8g" firstAttribute="top" secondItem="sh1-DT-ZcH" secondAttribute="bottom" id="b0j-lW-P9l"/>
+                            <constraint firstItem="F1B-pa-7fY" firstAttribute="leading" secondItem="dOi-i4-asv" secondAttribute="leadingMargin" constant="-20" id="cRY-cX-J2O"/>
+                            <constraint firstItem="RHh-Sq-Oh8" firstAttribute="top" secondItem="F1B-pa-7fY" secondAttribute="bottom" id="fYa-QT-hnZ"/>
                             <constraint firstItem="KWQ-Wu-edQ" firstAttribute="bottom" secondItem="dOi-i4-asv" secondAttribute="bottomMargin" id="fbU-JL-BZe"/>
-                            <constraint firstItem="F1B-pa-7fY" firstAttribute="leading" secondItem="dOi-i4-asv" secondAttribute="leadingMargin" constant="-20" id="iiz-YP-JtZ"/>
+                            <constraint firstItem="F1B-pa-7fY" firstAttribute="top" secondItem="Arr-7X-Bxz" secondAttribute="bottom" id="l2G-Ja-uZJ"/>
                             <constraint firstItem="Arr-7X-Bxz" firstAttribute="top" secondItem="h9a-1l-I8g" secondAttribute="bottom" id="oHd-zJ-i8D"/>
                             <constraint firstItem="h9a-1l-I8g" firstAttribute="leading" secondItem="dOi-i4-asv" secondAttribute="leadingMargin" constant="-20" id="pXN-h0-0qU"/>
                         </constraints>

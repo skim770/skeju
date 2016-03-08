@@ -71,7 +71,7 @@ static const CGFloat dotSize = 4;
 		[self.contentView.layer addSublayer:_dotLayer];
 		
 		_leftBorder = [CALayer layer];
-		_leftBorder.backgroundColor = [[UIColor lightGrayColor]CGColor];
+		_leftBorder.backgroundColor = [[UIColor clearColor]CGColor];
 		_leftBorder.hidden = YES;
 		[self.contentView.layer addSublayer:_leftBorder];
 		

@@ -144,13 +144,13 @@ static const CGFloat kMaxHourSlotHeight = 150.;
 - (void)setup
 {
 	_calendar = [NSCalendar currentCalendar];
-	_numberOfVisibleDays = 7;
+	_numberOfVisibleDays = 1;
 	_hourSlotHeight = 65.;
 	_timeColumnWidth = 60.;
-	_dayHeaderHeight = 40.;
-	_showsAllDayEvents = YES;
+	_dayHeaderHeight = 0;
+	_showsAllDayEvents = NO;
 	_eventsViewInnerMargin = 45.;
-	_allDayEventCellHeight = 20;
+	_allDayEventCellHeight = 25;
 	_pagingEnabled = YES;
 	_zoomingEnabled = YES;
 	_canCreateEvents = YES;
@@ -160,7 +160,7 @@ static const CGFloat kMaxHourSlotHeight = 150.;
 	_reuseQueue = [[MGCReusableObjectQueue alloc] init];
 	_loadingDays = [NSMutableOrderedSet orderedSetWithCapacity:14];
 	
-	self.backgroundColor = [UIColor whiteColor];
+	self.backgroundColor = [UIColor clearColor];
 	self.autoresizesSubviews = NO;
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidReceiveMemoryWarning:) name:UIApplicationDidReceiveMemoryWarningNotification object:nil];

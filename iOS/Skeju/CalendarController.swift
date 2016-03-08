@@ -103,26 +103,15 @@ class CalendarController: UIViewController, JTCalendarDelegate {
     }
     
     func initUI() {
-        statusBarView.clipsToBounds = false
-        statusBarView.layer.masksToBounds = false
-        statusBarView.layer.shadowColor = UIColor.darkGrayColor().CGColor
-        statusBarView.layer.shadowRadius = 5
-        statusBarView.layer.shadowOffset = CGSizeMake(0, 5)
-        statusBarView.layer.shadowOpacity = 0.75
-        
-        calendarMenuView.clipsToBounds = false
-        calendarMenuView.layer.masksToBounds = false
-        calendarMenuView.layer.shadowColor = UIColor.darkGrayColor().CGColor
-        calendarMenuView.layer.shadowRadius = 5
-        calendarMenuView.layer.shadowOffset = CGSizeMake(0, 5)
-        calendarMenuView.layer.shadowOpacity = 0.75
-        
-        calendarContentView.clipsToBounds = false
-        calendarContentView.layer.masksToBounds = false
-        calendarContentView.layer.shadowColor = UIColor.darkGrayColor().CGColor
-        calendarContentView.layer.shadowRadius = 5
-        calendarContentView.layer.shadowOffset = CGSizeMake(0, 5)
-        calendarContentView.layer.shadowOpacity = 0.75
+        let views = [statusBarView, calendarMenuView, calendarContentView]
+        for view in views {
+            view.clipsToBounds = false
+            view.layer.masksToBounds = false
+            view.layer.shadowColor = UIColor.darkGrayColor().CGColor
+            view.layer.shadowRadius = 5
+            view.layer.shadowOffset = CGSizeMake(0, 5)
+            view.layer.shadowOpacity = 0.75
+        }
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {

@@ -17,13 +17,6 @@
 		A79B50921C7636E600E61787 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79B50901C7636E600E61787 /* LaunchScreen.storyboard */; };
 		A79B509D1C7636E600E61787 /* SkejuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B509C1C7636E600E61787 /* SkejuTests.swift */; };
 		A79B50A81C7636E600E61787 /* SkejuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B50A71C7636E600E61787 /* SkejuUITests.swift */; };
-		A7E270DC1C8D1F0000BDCD4E /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E270D51C8D1F0000BDCD4E /* Bolts.framework */; };
-		A7E270DD1C8D1F0000BDCD4E /* FacebookSDKStrings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A7E270D61C8D1F0000BDCD4E /* FacebookSDKStrings.bundle */; };
-		A7E270DE1C8D1F0000BDCD4E /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E270D71C8D1F0000BDCD4E /* FBAudienceNetwork.framework */; };
-		A7E270DF1C8D1F0000BDCD4E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E270D81C8D1F0000BDCD4E /* FBSDKCoreKit.framework */; };
-		A7E270E01C8D1F0000BDCD4E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E270D91C8D1F0000BDCD4E /* FBSDKLoginKit.framework */; };
-		A7E270E11C8D1F0000BDCD4E /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E270DA1C8D1F0000BDCD4E /* FBSDKMessengerShareKit.framework */; };
-		A7E270E21C8D1F0000BDCD4E /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E270DB1C8D1F0000BDCD4E /* FBSDKShareKit.framework */; };
 		A7E270E41C8D1F9D00BDCD4E /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E270E31C8D1F9D00BDCD4E /* LoginController.swift */; };
 		A7E270E61C8D392300BDCD4E /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E270E51C8D392300BDCD4E /* CalendarController.swift */; };
 		A7E270E81C8D3C6100BDCD4E /* FindPeopleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E270E71C8D3C6100BDCD4E /* FindPeopleController.swift */; };
@@ -70,13 +63,6 @@
 		A79B50A31C7636E600E61787 /* SkejuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkejuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A79B50A71C7636E600E61787 /* SkejuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkejuUITests.swift; sourceTree = "<group>"; };
 		A79B50A91C7636E600E61787 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A7E270D51C8D1F0000BDCD4E /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		A7E270D61C8D1F0000BDCD4E /* FacebookSDKStrings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FacebookSDKStrings.bundle; sourceTree = "<group>"; };
-		A7E270D71C8D1F0000BDCD4E /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
-		A7E270D81C8D1F0000BDCD4E /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		A7E270D91C8D1F0000BDCD4E /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
-		A7E270DA1C8D1F0000BDCD4E /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
-		A7E270DB1C8D1F0000BDCD4E /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		A7E270E31C8D1F9D00BDCD4E /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		A7E270E51C8D392300BDCD4E /* CalendarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarController.swift; sourceTree = "<group>"; };
 		A7E270E71C8D3C6100BDCD4E /* FindPeopleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindPeopleController.swift; sourceTree = "<group>"; };
@@ -91,12 +77,6 @@
 			files = (
 				A71F46381C8E5C79001DFCF5 /* EventKitUI.framework in Frameworks */,
 				A71F46361C8E5C72001DFCF5 /* EventKit.framework in Frameworks */,
-				A7E270DC1C8D1F0000BDCD4E /* Bolts.framework in Frameworks */,
-				A7E270DF1C8D1F0000BDCD4E /* FBSDKCoreKit.framework in Frameworks */,
-				A7E270E21C8D1F0000BDCD4E /* FBSDKShareKit.framework in Frameworks */,
-				A7E270E11C8D1F0000BDCD4E /* FBSDKMessengerShareKit.framework in Frameworks */,
-				A7E270E01C8D1F0000BDCD4E /* FBSDKLoginKit.framework in Frameworks */,
-				A7E270DE1C8D1F0000BDCD4E /* FBAudienceNetwork.framework in Frameworks */,
 				D36512AC1F9E62504DE74E19 /* Pods_Skeju.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,24 +162,9 @@
 				A71F46391C8E5C81001DFCF5 /* CloudKit.framework */,
 				A71F46371C8E5C79001DFCF5 /* EventKitUI.framework */,
 				A71F46351C8E5C72001DFCF5 /* EventKit.framework */,
-				A7E270D41C8D1EF200BDCD4E /* FacebookSDK */,
 				089B392B592F6E3A95733F6B /* Pods_Skeju.framework */,
 			);
 			path = Frameworks;
-			sourceTree = "<group>";
-		};
-		A7E270D41C8D1EF200BDCD4E /* FacebookSDK */ = {
-			isa = PBXGroup;
-			children = (
-				A7E270D51C8D1F0000BDCD4E /* Bolts.framework */,
-				A7E270D61C8D1F0000BDCD4E /* FacebookSDKStrings.bundle */,
-				A7E270D71C8D1F0000BDCD4E /* FBAudienceNetwork.framework */,
-				A7E270D81C8D1F0000BDCD4E /* FBSDKCoreKit.framework */,
-				A7E270D91C8D1F0000BDCD4E /* FBSDKLoginKit.framework */,
-				A7E270DA1C8D1F0000BDCD4E /* FBSDKMessengerShareKit.framework */,
-				A7E270DB1C8D1F0000BDCD4E /* FBSDKShareKit.framework */,
-			);
-			path = FacebookSDK;
 			sourceTree = "<group>";
 		};
 		BD3AC275C8E0F429F01440E4 /* Pods */ = {
@@ -325,7 +290,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A79B50921C7636E600E61787 /* LaunchScreen.storyboard in Resources */,
-				A7E270DD1C8D1F0000BDCD4E /* FacebookSDKStrings.bundle in Resources */,
 				A79B508F1C7636E600E61787 /* Assets.xcassets in Resources */,
 				A79B508D1C7636E600E61787 /* Main.storyboard in Resources */,
 			);
@@ -597,6 +561,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks/FacebookSDK",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = Skeju/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -616,6 +581,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks/FacebookSDK",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = Skeju/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

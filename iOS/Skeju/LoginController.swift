@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import FBSDKLoginKit
 
 class LoginController: UIViewController, UITextFieldDelegate {
     @IBOutlet var loginView: UIView!
@@ -38,8 +39,26 @@ class LoginController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func fbLoginBtnTouchUpInside(sender: AnyObject) {
-        print("Facebook Login Button Pressed.")
+        let fbLoginManager = FBSDKLoginManager()
+        fbLoginManager.logInWithReadPermissions(["public_profile"], fromViewController: self, handler: { (result, error) -> Void in
+            if (error != nil) {
+                NSLog("Process error")
+            } else if (result.isCancelled) {
+                NSLog("Process cancelled")
+            } else {
+                let mainVC = self.storyboard?.instantiateViewControllerWithIdentifier("MainVC") as! TabBarController
+                self.presentViewController(mainVC, animated: true, completion: nil)
+//                self.performSegueWithIdentifier("LoginSegue", sender: self)
+            }
+        })
     }
+    
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        if segue.identifier == "LoginSegue" {
+//            let mainVC = segue.destinationViewController as! TabBarController;
+//            _ = mainVC.viewControllers![0] as! CalendarController
+//        }
+//    }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         let nextTag: NSInteger! = textField.tag + 1

@@ -1,0 +1,34 @@
+PODS:
+  - Bolts (1.6.0):
+    - Bolts/AppLinks (= 1.6.0)
+    - Bolts/Tasks (= 1.6.0)
+  - Bolts/AppLinks (1.6.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.6.0)
+  - CalendarLib (1.0):
+    - OrderedDictionary (~> 1.2)
+    - OSCache (~> 1.2)
+  - FBSDKCoreKit (4.10.1):
+    - Bolts (~> 1.5)
+  - FBSDKLoginKit (4.10.1):
+    - FBSDKCoreKit
+  - JTCalendar (2.1.5)
+  - OrderedDictionary (1.2)
+  - OSCache (1.2.1)
+
+DEPENDENCIES:
+  - CalendarLib (~> 1.0)
+  - FBSDKCoreKit (~> 4.10.1)
+  - FBSDKLoginKit (~> 4.10.1)
+  - JTCalendar (~> 2.0)
+
+SPEC CHECKSUMS:
+  Bolts: f52a250053bb517ca874523c3913776359ab3def
+  CalendarLib: 09364238c6259a17a719f2f8b05a79bf379ecb8d
+  FBSDKCoreKit: d2aaed5e9ab7d8d6301c533376a1fbff1cf3deb5
+  FBSDKLoginKit: 699ff169080e3072de4b9b0faca90bf23dc36deb
+  JTCalendar: 57a4420f12d10c93c3b28da96803e7043d1c9281
+  OrderedDictionary: 9cc5d69c5c5314ad696ed1839190724e83d534c7
+  OSCache: 826996b68e8542a8a3d8af1ab0a0fc3070d8f357
+
+COCOAPODS: 0.39.0

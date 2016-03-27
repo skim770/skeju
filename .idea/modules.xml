@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/complete.iml" filepath="$PROJECT_DIR$/complete.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-poc_main.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-poc_main.iml" group="spring-poc" />
     </modules>
   </component>
 </project>

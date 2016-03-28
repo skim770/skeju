@@ -14,13 +14,17 @@ class FindPeopleController: UIViewController {
     
     @IBOutlet var titleView: UIView!
     @IBOutlet var dayPlannerContainer: UIView!
-    @IBOutlet var timeView: UIView!
-    @IBOutlet var foundFriendView: UIView!
 
+    @IBOutlet var beginTimeView: UIView!
+    @IBOutlet var endTimeView: UIView!
+    @IBOutlet var foundFriendView: UIView!
+    
     @IBOutlet weak var beginDate: UILabel!
     @IBOutlet weak var endDate: UILabel!
     @IBOutlet weak var beginTime: UIButton!
     @IBOutlet weak var endTime: UIButton!
+    @IBOutlet weak var beginDay: UILabel!
+    @IBOutlet weak var endDay: UILabel!
     
     let screenWidth = UIScreen.mainScreen().bounds.width
     let screenHeight = UIScreen.mainScreen().bounds.height
@@ -31,20 +35,22 @@ class FindPeopleController: UIViewController {
     let datePicker : UIDatePicker = UIDatePicker()
     
     @IBAction func beginChange(sender: AnyObject) {
-        timeChange(true)
+        
+        timeChange(true, pos: beginTime.center.x - beginTime.frame.width/2)
     }
     
     @IBAction func endChange(sender: AnyObject) {
-        timeChange(false)
+        timeChange(false, pos: endTime.center.x - endTime.frame.width/2)
     }
     
-    func timeChange(i: Bool) {
-        datePickerContainer.frame = CGRectMake(0.0, self.view.frame.height/2, 320.0, 300.0)
+    func timeChange(i: Bool, pos: CGFloat) {
+        datePickerContainer.frame = CGRectMake(pos, self.view.frame.height/2, 320.0, 200.0)
         datePickerContainer.backgroundColor = UIColor.whiteColor()
+        datePickerContainer.layer.cornerRadius = 15
         
         let pickerSize : CGSize = datePicker.sizeThatFits(CGSizeZero)
-        datePicker.frame = CGRectMake(0.0, 20, pickerSize.width, 460)
-        //datePicker.setDate(NSDate(), animated: true)
+        datePicker.frame = CGRectMake(0.0, 20, pickerSize.width, 180)
+        datePicker.setDate(NSDate(), animated: true)
         datePicker.maximumDate = NSDate()
         datePicker.datePickerMode = UIDatePickerMode.DateAndTime
         datePickerContainer.addSubview(datePicker)
@@ -58,15 +64,20 @@ class FindPeopleController: UIViewController {
             doneButton.addTarget(self, action: Selector("dismissPickerEnd:"), forControlEvents: UIControlEvents.TouchUpInside)
         }
         
-        doneButton.frame    = CGRectMake(250.0, 5.0, 70.0, 37.0)
+        doneButton.frame = CGRectMake(250.0, 5.0, 70.0, 37.0)
         
         datePickerContainer.addSubview(doneButton)
         
         self.view.addSubview(datePickerContainer)
         
     }
+    
     func dismissPickerBegin(sender: UIButton) {
         let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "cccc"
+        beginDay.text = dateFormatter.stringFromDate(datePicker.date)
+        dateFormatter.dateFormat = "MMM dd"
+        beginDate.text = dateFormatter.stringFromDate(datePicker.date)
         dateFormatter.dateFormat = "h:mm a"
         beginTime.setTitle(dateFormatter.stringFromDate(datePicker.date), forState: .Normal)
         for view in self.datePickerContainer.subviews {
@@ -74,8 +85,13 @@ class FindPeopleController: UIViewController {
         }
         datePickerContainer.removeFromSuperview()
     }
+    
     func dismissPickerEnd(sender: UIButton) {
         let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "cccc"
+        endDay.text = dateFormatter.stringFromDate(datePicker.date)
+        dateFormatter.dateFormat = "MMM dd"
+        endDate.text = dateFormatter.stringFromDate(datePicker.date)
         dateFormatter.dateFormat = "h:mm a"
         endTime.setTitle(dateFormatter.stringFromDate(datePicker.date), forState: .Normal)
         for view in self.datePickerContainer.subviews {
@@ -99,6 +115,10 @@ class FindPeopleController: UIViewController {
         dayPlannerController.didMoveToParentViewController(self)
 
         let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "cccc"
+        beginDay.text = dateFormatter.stringFromDate(NSDate())
+        endDay.text = dateFormatter.stringFromDate(NSDate())
+
         dateFormatter.dateFormat = "MMM dd"
         beginDate.text = dateFormatter.stringFromDate(NSDate())
         endDate.text = dateFormatter.stringFromDate(NSDate())

@@ -50,8 +50,6 @@ class FindPeopleController: UIViewController {
         
         let pickerSize : CGSize = datePicker.sizeThatFits(CGSizeZero)
         datePicker.frame = CGRectMake(0.0, 20, pickerSize.width, 180)
-        datePicker.setDate(NSDate(), animated: true)
-        datePicker.maximumDate = NSDate()
         datePicker.datePickerMode = UIDatePickerMode.DateAndTime
         datePickerContainer.addSubview(datePicker)
         
@@ -126,39 +124,5 @@ class FindPeopleController: UIViewController {
         dateFormatter.dateFormat = "h:mm a"
         beginTime.setTitle(dateFormatter.stringFromDate(NSDate()), forState: .Normal)
         endTime.setTitle(dateFormatter.stringFromDate(NSDate()), forState: .Normal)
-        
-        /*
-        beginTime.addTarget(self, action: Selector("dataPickerChanged:"), forControlEvents: UIControlEvents.ValueChanged)
-        
-        endTime.addTarget(self, action: Selector("dataPickerChanged:"), forControlEvents: UIControlEvents.ValueChanged)*/
-        
     }
-    
-    
-    
-    /*func datePickerChanged(datePicker:UIDatePicker) {
-        var dateFormatter = NSDateFormatter()
-    
-        dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
-        dateFormatter.timeStyle = NSDateFormatterStyle.ShortStyle
-        
-        var strDate = dateFormatter.stringFromDate(datePicker.date)
-        dateLabel.text = strDate
-    }*/
 }
-
-/*
-// Get Friend List
-FBRequestConnection.startForMyFriendsWithCompletionHandler({ (connection, result, error: NSError!) -> Void in
-if error == nil {
-var friendObjects = result["data"] as [NSDictionary]
-for friendObject in friendObjects {
-println(friendObject["id"] as NSString)
-}
-println("\(friendObjects.count)")
-} else {
-println("Error requesting friends list form facebook")
-println("\(error)")
-}
-})
-*/

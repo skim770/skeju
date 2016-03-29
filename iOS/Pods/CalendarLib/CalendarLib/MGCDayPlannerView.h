@@ -29,6 +29,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MGCTimeRowsView.h"
 
 @class MGCEventView;
 @class MGCDateRange;
@@ -72,6 +73,13 @@ typedef enum : NSUInteger {
 	@discussion The default value is the logical calendar for the current user
 */
 @property (nonatomic) NSCalendar *calendar;
+
+@property (nonatomic) UICollectionView *sTimedEventsView;
+@property (nonatomic) UICollectionView *sAllDayEventsView;
+@property (nonatomic) UIView *sAllDayEventsBackgroundView;
+@property (nonatomic) UICollectionView *sDayColumnsView;
+@property (nonatomic) UIScrollView *sTimeScrollView;
+@property (nonatomic) MGCTimeRowsView *sTimeRowsView;
 
 /*!
 	@abstract	Returns the number of days the view shows at once, i.e the number of columns displayed.

@@ -144,6 +144,12 @@ static const CGFloat kMaxHourSlotHeight = 150.;
 - (void)setup
 {
 	_calendar = [NSCalendar currentCalendar];
+    _sTimedEventsView = [self timedEventsView];
+    _sAllDayEventsView = [self allDayEventsView];
+    _sAllDayEventsBackgroundView = [self allDayEventsBackgroundView];
+    _sDayColumnsView = [self dayColumnsView];
+    _sTimeScrollView = [self timeScrollView];
+    _sTimeRowsView = [self timeRowsView];
 	_numberOfVisibleDays = 1;
 	_hourSlotHeight = 65.;
 	_timeColumnWidth = 60.;

@@ -17,6 +17,8 @@ class LoginController: UIViewController, UITextFieldDelegate {
     @IBOutlet var loginBtn: UIButton!
     @IBOutlet var fbLoginBtn: UIButton!
     
+    let userDefault = NSUserDefaults()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initUI()
@@ -40,25 +42,28 @@ class LoginController: UIViewController, UITextFieldDelegate {
     
     @IBAction func fbLoginBtnTouchUpInside(sender: AnyObject) {
         let fbLoginManager = FBSDKLoginManager()
-        fbLoginManager.logInWithReadPermissions(["public_profile"], fromViewController: self, handler: { (result, error) -> Void in
+        fbLoginManager.logInWithReadPermissions(["public_profile", "email", "user_friends"], fromViewController: self, handler: { (result, error) -> Void in
             if (error != nil) {
-                NSLog("Process error")
+                NSLog("Error: \(error)")
             } else if (result.isCancelled) {
                 NSLog("Process cancelled")
             } else {
+                if FBSDKAccessToken.currentAccessToken() != nil {
+                    let fbGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: nil)
+                    fbGraphRequest.startWithCompletionHandler({ (connection, result, error) -> Void in
+                        if (error) != nil {
+                            print("Error: \(error)")
+                        } else {
+                            self.userDefault.setValue(result.valueForKey("name"), forKey: "FBName")
+                            self.userDefault.setValue(result.valueForKey("id"), forKey: "FBID")
+                        }
+                    })
+                }
                 let mainVC = self.storyboard?.instantiateViewControllerWithIdentifier("MainVC") as! TabBarController
                 self.presentViewController(mainVC, animated: true, completion: nil)
-//                self.performSegueWithIdentifier("LoginSegue", sender: self)
             }
         })
     }
-    
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        if segue.identifier == "LoginSegue" {
-//            let mainVC = segue.destinationViewController as! TabBarController;
-//            _ = mainVC.viewControllers![0] as! CalendarController
-//        }
-//    }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         let nextTag: NSInteger! = textField.tag + 1

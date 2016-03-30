@@ -12,11 +12,13 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'spring-boot'
+apply plugin: 'war'
 
 jar {
     baseName = 'gs-spring-boot'
     version =  '0.1.0'
 }
+
 
 repositories {
     mavenCentral()
@@ -31,6 +33,8 @@ dependencies {
     compile("org.springframework:spring-jdbc")
     compile('org.apache.commons:commons-dbcp2:2.0')
     // tag::actuator[]
+
+    compile("org.springframework.boot:spring-boot-starter-tomcat")
     compile("org.springframework.boot:spring-boot-starter-actuator")
     runtime("mysql:mysql-connector-java:5.1.34")
     // end::actuator[]

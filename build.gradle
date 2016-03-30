@@ -22,7 +22,6 @@ jar {
     version =  '0.1.0'
 }
 
-
 repositories {
     mavenCentral()
 }
@@ -36,17 +35,14 @@ dependencies {
     compile("org.springframework:spring-jdbc")
     compile('org.apache.commons:commons-dbcp2:2.0')
     // tag::actuator[]
-
-    compile("org.springframework.boot:spring-boot-starter-tomcat")
+    providedRuntime ("org.springframework.boot:spring-boot-starter-tomcat")
     compile("org.springframework.boot:spring-boot-starter-undertow")
     compile("org.springframework.boot:spring-boot-starter-actuator")
     runtime("mysql:mysql-connector-java:5.1.34")
     // end::actuator[]
+    compile("com.fasterxml.jackson.core:jackson-databind")
+    testCompile("junit:junit")
     testCompile("org.springframework.boot:spring-boot-starter-test")
-}
-
-dependencies {
-    compile("org.springframework.boot:spring-boot-starter-undertow")
 }
 
 task wrapper(type: Wrapper) {

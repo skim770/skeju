@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class MainController
 {
+    /*
     @ResponseBody
     public String index() {
         return "index()\n";
@@ -27,5 +28,5 @@ public class MainController
 	public String loginNew(@RequestParam("userId") String userId) {
 		return String.format("New User %s", userId);
 	}
-
+*/
 }

@@ -21,13 +21,11 @@ public class EventDAOImpl implements EventDAO {
 
     public List<Event> getAllEvents() {
         List<Event> events = new ArrayList<Event>();
-        //events.add(new Event(EventType.Z,"p1",100,200,3,"Test"));
-        //events.add(new Event(EventType.Z,"p2",400,300,3,"Test"));
         return events;
     }
 
     public void create(Event event) {
         String query = "INSERT INTO event VALUES(?,?,?)";
-        this.jdbcTemplate.update(query, event.getCls().toString(), event.getId(), event.getName());
+        this.jdbcTemplate.update(query, event.getCls().toString());
     }
 }

@@ -8,6 +8,7 @@ import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
 import yuna.skeju.model.Event;
 import yuna.skeju.service.EventManager;
+import yuna.skeju.type.EventType;
 
 import javax.validation.Valid;
 import java.util.List;
@@ -31,10 +32,32 @@ public class EventController {
 
     @RequestMapping(method = RequestMethod.POST)
     @ResponseBody
-    public ResponseEntity addEvents(@Valid @RequestBody Event event, Errors errors) { //
-        if (errors.hasErrors()) {
-            return new ResponseEntity(errors, HttpStatus.BAD_REQUEST);
-        }
+    public ResponseEntity addEvents(@RequestParam ("eventIdentifier") String eventId,
+                                    @RequestParam ("userId") String userId,
+                                    @RequestParam ("otherId") String otherId,
+                                    @RequestParam ("availability") String availability,
+                                    @RequestParam ("startDate") String startDate,
+                                    @RequestParam ("endDate") String endDate,
+                                    @RequestParam ("allDay") String allDay,
+                                    @RequestParam ("occurenceDate") String occurenceDate,
+                                    @RequestParam ("isDetached") String isDetached,
+                                    @RequestParam ("organizer") String organizer,
+                                    @RequestParam ("status") String status
+                                    ) {
+        Event event = new Event();
+        event.setCls(EventType.first);
+        event.setEventIdentifier(eventId);
+        event.setUserId(userId);
+        event.setOtherId(otherId);
+        event.setAvailability(availability);
+        event.setStartDate(startDate);
+        event.setEndDate(endDate);
+        event.setAllDay(allDay);
+        event.setOccurrenceDate(occurenceDate);
+        event.setIsDetached(isDetached);
+        event.setOrganizer(organizer);
+        event.setStatus(status);
+
         manager.create(event);
         return new ResponseEntity(event, HttpStatus.CREATED);
     }

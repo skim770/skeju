@@ -6,6 +6,9 @@ buildscript {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:1.3.2.RELEASE")
         classpath("mysql:mysql-connector-java:5.1.16")
     }
+    configurations {
+        compile.exclude module: "spring-boot-starter-tomcat"
+    }
 }
 
 apply plugin: 'java'
@@ -35,10 +38,15 @@ dependencies {
     // tag::actuator[]
 
     compile("org.springframework.boot:spring-boot-starter-tomcat")
+    compile("org.springframework.boot:spring-boot-starter-undertow")
     compile("org.springframework.boot:spring-boot-starter-actuator")
     runtime("mysql:mysql-connector-java:5.1.34")
     // end::actuator[]
     testCompile("org.springframework.boot:spring-boot-starter-test")
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-undertow")
 }
 
 task wrapper(type: Wrapper) {

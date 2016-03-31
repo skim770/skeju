@@ -22,15 +22,21 @@ class ScheduleController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet var addFriendBtn: UIButton!
     @IBOutlet var fbFriendsList: UITableView!
     @IBOutlet var scrollMask: UIScrollView!
+    @IBOutlet var addEventBtn: UIButton!
     
     let userDefault = NSUserDefaults()
     let screenWidth = UIScreen.mainScreen().bounds.width
     var schedule: DayPlannerController!
+    var friendFID: String?
     var friendSchedule: DayPlannerController!
     var fbFriendsListData = [(name: String, id: String, profile: UIImage)]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.navigationBarHidden = true
+        addEventBtn.layer.cornerRadius = 35
+        addEventBtn.hidden = true
         
         schedule = DayPlannerController(eventStore: EKEventStore())
         schedule.calendar = NSCalendar.currentCalendar()
@@ -104,6 +110,11 @@ class ScheduleController: UIViewController, UITableViewDelegate, UITableViewData
         })
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        self.navigationController?.navigationBarHidden = true
+    }
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = fbFriendsList.dequeueReusableCellWithIdentifier("FBFriendCell")! as UITableViewCell
         cell.textLabel?.text = fbFriendsListData[indexPath.row].name
@@ -114,6 +125,7 @@ class ScheduleController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.friendName.text = fbFriendsListData[indexPath.row].name
+        self.friendFID = fbFriendsListData[indexPath.row].id
         self.friendProfilePic.image = fbFriendsListData[indexPath.row].profile
         self.friendProfilePic.contentMode = UIViewContentMode.ScaleToFill
         self.friendProfilePic.layer.cornerRadius = 29
@@ -150,6 +162,7 @@ class ScheduleController: UIViewController, UITableViewDelegate, UITableViewData
         self.container.hidden = true
         self.friendContainer.hidden = true
         self.scrollMask.hidden = true
+        self.addEventBtn.hidden = true
         self.fbFriendsList.hidden = false
     }
     
@@ -158,6 +171,15 @@ class ScheduleController: UIViewController, UITableViewDelegate, UITableViewData
         self.container.hidden = false
         self.friendContainer.hidden = false
         self.scrollMask.hidden = false
+        self.addEventBtn.hidden = false
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "AddNewEventSegue" {
+            let addEventController = segue.destinationViewController as! AddEventController
+            addEventController.friendName = friendName.text
+            addEventController.friendFID = friendFID
+        }
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {

@@ -19,9 +19,9 @@ class ScheduleController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet var userProfilePic: UIImageView!
     @IBOutlet var friendProfilePic: UIImageView!
     @IBOutlet var friendName: UILabel!
-    @IBOutlet var addFriendBtn: UIButton!
     @IBOutlet var fbFriendsList: UITableView!
     @IBOutlet var scrollMask: UIScrollView!
+    @IBOutlet var addFriendBtn: UIButton!
     @IBOutlet var addEventBtn: UIButton!
     
     let userDefault = NSUserDefaults()
@@ -35,7 +35,7 @@ class ScheduleController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         
         self.navigationController?.navigationBarHidden = true
-        addEventBtn.layer.cornerRadius = 35
+        addEventBtn.layer.cornerRadius = 30
         addEventBtn.hidden = true
         
         schedule = DayPlannerController(eventStore: EKEventStore())
@@ -154,7 +154,6 @@ class ScheduleController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     @IBAction func addFriendBtnTouchUpInside(sender: AnyObject) {
-        print("Add Friend Button Pressed")
         showFBFriendsList()
     }
     
@@ -164,6 +163,8 @@ class ScheduleController: UIViewController, UITableViewDelegate, UITableViewData
         self.scrollMask.hidden = true
         self.addEventBtn.hidden = true
         self.fbFriendsList.hidden = false
+        self.friendName.text = "Add Friend"
+        self.friendProfilePic.image = UIImage(named: "AddFriend")
     }
     
     func showSchedules() {

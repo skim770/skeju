@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import EventKit
+import FBSDKCoreKit
 
 class FindPeopleController: UIViewController {
     
@@ -25,6 +26,10 @@ class FindPeopleController: UIViewController {
     @IBOutlet weak var endTime: UIButton!
     @IBOutlet weak var beginDay: UILabel!
     @IBOutlet weak var endDay: UILabel!
+    
+    @IBOutlet weak var fbFriendList: UITableView!
+    var fbFriendsListData = [(name: String, id: String, profile: UIImage)]()
+    
     
     let screenWidth = UIScreen.mainScreen().bounds.width
     let screenHeight = UIScreen.mainScreen().bounds.height
@@ -55,7 +60,7 @@ class FindPeopleController: UIViewController {
         
         let doneButton = UIButton()
         doneButton.setTitle("Done", forState: UIControlState.Normal)
-        doneButton.setTitleColor(UIColor.blueColor(), forState: UIControlState.Normal)
+        doneButton.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
         if i {
             doneButton.addTarget(self, action: Selector("dismissPickerBegin:"), forControlEvents: UIControlEvents.TouchUpInside)
         } else {
@@ -97,9 +102,34 @@ class FindPeopleController: UIViewController {
         }
         datePickerContainer.removeFromSuperview()
     }
+    
+    func getFriends() {
+        let fbGraphRequest = FBSDKGraphRequest(graphPath: "me/friends", parameters: nil, HTTPMethod: "GET")
+        fbGraphRequest.startWithCompletionHandler({ (connection, result, error) -> Void in
+            if error != nil {
+                print("Error: \(error)")
+            } else {
+                let friendsDict = result as! NSDictionary
+                let data : NSArray = friendsDict.objectForKey("data") as! NSArray
+                
+                for i in 0..<data.count {
+                    let valueDict : NSDictionary = data[i] as! NSDictionary
+                    let fname = valueDict.objectForKey("name") as! String
+                    let fid = valueDict.objectForKey("id") as! String
+                    
+                    let fbPicURL = "https://graph.facebook.com/\(fid)/picture?type=normal&return_ssl_resources=1"
+                    let fbRequest = NSURL(string: fbPicURL)
+                    let fbProfilePicData = NSData(contentsOfURL: fbRequest!)
+                    let fbProfilePic = UIImage(data: fbProfilePicData!)
+                    
+                    self.fbFriendsListData.append((name: fname, id: fid, profile: fbProfilePic!))
+                }
+                
+                self.fbFriendList.reloadData()
+            }
+        })
+    }
    
-    
-    
     override func viewDidLoad() {
         //self.scene.scaleMode = SKSceneScaleMode.ResizeFill
         
@@ -124,5 +154,23 @@ class FindPeopleController: UIViewController {
         dateFormatter.dateFormat = "h:mm a"
         beginTime.setTitle(dateFormatter.stringFromDate(NSDate()), forState: .Normal)
         endTime.setTitle(dateFormatter.stringFromDate(NSDate()), forState: .Normal)
+        
+        getFriends()
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = fbFriendList.dequeueReusableCellWithIdentifier("FBFriendCell")! as UITableViewCell
+        cell.textLabel?.text = fbFriendsListData[indexPath.row].name
+        cell.imageView?.image = fbFriendsListData[indexPath.row].profile
+        cell.imageView?.layer.cornerRadius = 5
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return fbFriendsListData.count
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return CGFloat(50)
     }
 }

@@ -15,9 +15,6 @@ class TabBarController: UITabBarController {
         let color = UIColor(red: 22/255.0, green: 22/255.0, blue: 22/255.0, alpha: 0.4)
         UITabBar.appearance().barTintColor = color
         UITabBar.appearance().tintColor = UIColor.whiteColor()
-        
-        // Set default page to make testing easier
-        self.selectedIndex = 2
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {

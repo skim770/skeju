@@ -21,6 +21,7 @@ class CalendarController: UIViewController, JTCalendarDelegate {
     
     let screenWidth = UIScreen.mainScreen().bounds.width
     let screenHeight = UIScreen.mainScreen().bounds.height
+    let userDefaults = NSUserDefaults()
 
     var dayPlannerController: DayPlannerController!
     var calendarManager: JTCalendarManager!
@@ -32,18 +33,21 @@ class CalendarController: UIViewController, JTCalendarDelegate {
         calendarManager = JTCalendarManager()
         calendarManager.delegate = self
         initUI()
+        _eventStore = EKEventStore()
 
         calendarManager.menuView = calendarMenuView
         calendarManager.contentView = calendarContentView
         calendarManager.setDate(NSDate())
         
-        dayPlannerController = DayPlannerController(eventStore: EKEventStore())
+        dayPlannerController = DayPlannerController(eventStore: _eventStore)
         dayPlannerController.calendar = NSCalendar.currentCalendar()
         
         self.addChildViewController(dayPlannerController)
         self.dayPlannerContainer.addSubview(dayPlannerController.view)
         dayPlannerController.view.frame = self.dayPlannerContainer.bounds
         dayPlannerController.didMoveToParentViewController(self)
+        
+        loadEventStoreToDB(_eventStore!)
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -115,6 +119,60 @@ class CalendarController: UIViewController, JTCalendarDelegate {
             view.layer.shadowOffset = CGSizeMake(0, 5)
             view.layer.shadowOpacity = 0.75
         }
+    }
+    
+    func loadEventStoreToDB(eventStore: EKEventStore) {
+        let userFID = userDefaults.valueForKey("FBID") as! String
+        let request = NSMutableURLRequest(URL: NSURL(string: "http://api-skeju.rhcloud.com/event/get/\(userFID)")!)
+        request.HTTPMethod = "GET"
+        let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
+            guard error == nil && data != nil else {                                                          // check for fundamental networking error
+                print("error=\(error)")
+                return
+            }
+            
+            if let httpStatus = response as? NSHTTPURLResponse where httpStatus.statusCode != 200 {           // check for http errors
+                print("statusCode should be 200, but is \(httpStatus.statusCode)")
+                print("response = \(response)")
+            }
+            
+            let responseString = NSString(data: data!, encoding: NSUTF8StringEncoding)!
+            if responseString == "[]" {
+                NSLog("Loading EKEventStore of \(userFID)")
+                let calendar = NSCalendar.currentCalendar()
+                let oneMonthAgo = calendar.dateByAddingUnit(.Month, value: -1, toDate: NSDate(), options: [])!
+                let twoMonthsLater = calendar.dateByAddingUnit(.Month, value: 2, toDate: NSDate(), options: [])!
+                
+                let predicate = self._eventStore?.predicateForEventsWithStartDate(oneMonthAgo, endDate: twoMonthsLater, calendars: nil)
+                self._eventStore?.enumerateEventsMatchingPredicate(predicate!, usingBlock: { (event, stop) in
+                    let postReq = NSMutableURLRequest(URL: NSURL(string: "http://api-skeju.rhcloud.com/event")!)
+                    postReq.HTTPMethod = "POST"
+                    let userId: String = self.userDefaults.valueForKey("FBID") as! String
+                    let availability: String = String(event.availability.rawValue)
+                    let startDate: String = String(event.startDate)
+                    let endDate: String = String(event.endDate)
+                    let allDay: String = String(event.allDay)
+                    let isDetached: String = String(event.isDetached)
+                    let occurrenceDate: String = String(event.occurrenceDate)
+                    let status: String = String(event.status.rawValue)
+                    let postString = "eventIdentifier=\(event.eventIdentifier)&userId=\(userId)&otherId=nil&availability=\(availability)&startDate=\(startDate)&endDate=\(endDate)&allDay=\(allDay)&isDetached=\(isDetached)&occurenceDate=\(occurrenceDate)&organizer=nil&status=\(status)"
+                    postReq.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
+                    let task = NSURLSession.sharedSession().dataTaskWithRequest(postReq) { data, response, error in
+                        guard error == nil && data != nil else {
+                            print("error=\(error)")
+                            return
+                        }
+                        
+                        if let httpStatus = response as? NSHTTPURLResponse where httpStatus.statusCode != 200 {
+                            print("statusCode should be 200, but is \(httpStatus.statusCode)")
+                            print("response = \(response!)")
+                        }
+                    }
+                    task.resume()
+                })
+            }
+        }
+        task.resume()
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {

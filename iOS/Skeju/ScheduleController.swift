@@ -45,13 +45,6 @@ class ScheduleController: UIViewController, UITableViewDelegate, UITableViewData
         container.hidden = true
         container.layer.masksToBounds = true
         
-        friendSchedule = DayPlannerController(eventStore: EKEventStore())
-        friendSchedule.calendar = NSCalendar.currentCalendar()
-        friendSchedule.view.frame = friendContainer.bounds
-        friendSchedule.dayPlannerView.timeColumnWidth = 0
-        friendContainer.addSubview(friendSchedule.view)
-        friendContainer.hidden = true
-        
         fbFriendsList.delegate = self
         fbFriendsList.dataSource = self
 
@@ -115,6 +108,70 @@ class ScheduleController: UIViewController, UITableViewDelegate, UITableViewData
         self.navigationController?.navigationBarHidden = true
     }
     
+    func initFriendsPlanner() {
+        let eventStore = EKEventStore()
+        let friendsCal = EKCalendar(forEntityType: .Event, eventStore: eventStore)
+        friendsCal.title = "FriendsCal"
+        
+        for source in eventStore.sources {
+            if source.sourceType == EKSourceType.Local {
+                friendsCal.source = source
+                break;
+            }
+        }
+        
+        do {
+            try eventStore.saveCalendar(friendsCal, commit: true)
+        } catch {
+            NSLog("Error while saving calendar to eventStore.")
+        }
+        
+        friendSchedule = DayPlannerController(eventStore: eventStore)
+        let request = NSMutableURLRequest(URL: NSURL(string: "http://api-skeju.rhcloud.com/event/get/\(self.friendFID!)")!)
+        request.HTTPMethod = "GET"
+        let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
+            guard error == nil && data != nil else {
+                print("error=\(error)")
+                return
+            }
+            
+            if let httpStatus = response as? NSHTTPURLResponse where httpStatus.statusCode != 200 {
+                print("statusCode should be 200, but is \(httpStatus.statusCode)")
+                print("response = \(response)")
+            }
+            
+            do {
+                let jsonData = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions())
+                for eventData in jsonData as! [Dictionary<String, AnyObject>] {
+                    let df = NSDateFormatter()
+                    df.dateFormat = "yyyy-MM-dd HH:mm:ss  zzzz"
+                    let event = EKEvent(eventStore: eventStore)
+                    event.calendar = friendsCal
+                    event.title = "Busy"
+                    event.startDate = df.dateFromString(eventData["startDate"] as! String)!
+                    event.endDate = df.dateFromString(eventData["endDate"] as! String)!
+                    event.availability = EKEventAvailability(rawValue: Int((eventData["availability"] as! String))!)!
+                    event.allDay = eventData["allDay"] as! String == "true"
+                    do {
+                        try eventStore.saveEvent(event, span: EKSpan.ThisEvent)
+                    } catch {
+                        NSLog("Error while storing event to calendar")
+                    }
+                }
+            } catch {
+                NSLog("Error in parsing Friend's Calendar JSON Data. \(error)")
+            }
+            
+            self.friendSchedule.calendar = NSCalendar.currentCalendar()
+            self.friendSchedule.view.frame = self.friendContainer.bounds
+            self.friendSchedule.dayPlannerView.timeColumnWidth = 0
+            self.friendContainer.addSubview(self.friendSchedule.view)
+//            self.friendContainer.hidden = true
+            self.friendContainer.hidden = false
+        }
+        task.resume()
+    }
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = fbFriendsList.dequeueReusableCellWithIdentifier("FBFriendCell")! as UITableViewCell
         cell.textLabel?.text = fbFriendsListData[indexPath.row].name
@@ -168,6 +225,7 @@ class ScheduleController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func showSchedules() {
+        initFriendsPlanner()
         self.fbFriendsList.hidden = true
         self.container.hidden = false
         self.friendContainer.hidden = false

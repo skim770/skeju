@@ -18,16 +18,23 @@ class AddEventController: UIViewController, UITextFieldDelegate {
     @IBOutlet var allDaySwitch: UISwitch!
     @IBOutlet var startDateLabel: UILabel!
     @IBOutlet var startTimeLabel: UILabel!
+    @IBOutlet var startBtn: UIButton!
     @IBOutlet var endDateLabel: UILabel!
     @IBOutlet var endTimeLabel: UILabel!
+    @IBOutlet var endBtn: UIButton!
     @IBOutlet var availabilitySegCtrl: UISegmentedControl!
     @IBOutlet var scheduleBtn: UIButton!
+    @IBOutlet var datePicker: UIDatePicker!
     
     let userDefault = NSUserDefaults()
     var userFID: String!
     var userName: String!
     var friendFID: String?
     var friendName: String?
+    var datePickerTouched: Bool!
+    var datePickerTouchedByStart: Bool?
+    var startDate: NSDate?
+    var endDate: NSDate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +46,7 @@ class AddEventController: UIViewController, UITextFieldDelegate {
         self.navigationItem.title = "New Event"
         
         initUI()
+        datePickerTouched = false
         
         userFID = userDefault.valueForKey("FBID") as! String
         userName = userDefault.valueForKey("FBName") as! String
@@ -47,6 +55,59 @@ class AddEventController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func scheduleBtnTouchUpInside(sender: AnyObject) {
+        let identifier = titleTF.text
+        let availability: String = String(availabilitySegCtrl.selectedSegmentIndex)
+        let allDay: String = String(allDaySwitch.on)
+        let isDetached: String = String("nil")
+        let occurrenceDate: String = "nil"
+        let status: String = String("1")
+        
+        let postReq = NSMutableURLRequest(URL: NSURL(string: "http://api-skeju.rhcloud.com/event")!)
+        postReq.HTTPMethod = "POST"
+        let postString = "eventIdentifier=\(identifier!)&userId=\(userFID)&otherId=\(friendFID!)&availability=\(availability)&startDate=\(startDate!)&endDate=\(endDate!)&allDay=\(allDay)&isDetached=\(isDetached)&occurenceDate=\(occurrenceDate)&organizer=nil&status=\(status)"
+        postReq.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
+        let task = NSURLSession.sharedSession().dataTaskWithRequest(postReq) { data, response, error in
+            guard error == nil && data != nil else {
+                print("error=\(error)")
+                return
+            }
+            
+            if let httpStatus = response as? NSHTTPURLResponse where httpStatus.statusCode != 200 {
+                print("statusCode should be 200, but is \(httpStatus.statusCode)")
+                print("response = \(response!)")
+            }
+        }
+        task.resume()
+    }
+    
+    @IBAction func startBtnTouchUpInside(sender: AnyObject) {
+        self.datePicker.hidden = false
+        self.datePickerTouched = true
+        self.datePickerTouchedByStart = true
+    }
+    
+    @IBAction func endBtnTouchUpInside(sender: AnyObject) {
+        self.datePicker.hidden = false
+        self.datePickerTouched = true
+        self.datePickerTouchedByStart = false
+    }
+    
+    func dismissDatePicker() {
+        let dfDate = NSDateFormatter()
+        dfDate.dateStyle = NSDateFormatterStyle.MediumStyle
+        let dfTime = NSDateFormatter()
+        dfTime.timeStyle = NSDateFormatterStyle.ShortStyle
+        if datePickerTouchedByStart == true {
+            startDateLabel.text = dfDate.stringFromDate(datePicker.date)
+            startTimeLabel.text = dfTime.stringFromDate(datePicker.date)
+            startDate = datePicker.date
+        } else {
+            endDateLabel.text = dfDate.stringFromDate(datePicker.date)
+            endTimeLabel.text = dfTime.stringFromDate(datePicker.date)
+            endDate = datePicker.date
+        }
+        datePicker.hidden = true
+        datePickerTouched = false
     }
     
     func initUI() {
@@ -78,6 +139,9 @@ class AddEventController: UIViewController, UITextFieldDelegate {
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         view.endEditing(true)
         super.touchesBegan(touches, withEvent: event)
+        if datePickerTouched == true {
+            dismissDatePicker()
+        }
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {

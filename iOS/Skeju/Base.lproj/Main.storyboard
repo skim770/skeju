@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ICI-Ur-DkP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Od2-3Z-o2u">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -623,17 +623,27 @@
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKH-va-62A">
+                                                <rect key="frame" x="0.0" y="0.0" width="550" height="35"/>
+                                                <connections>
+                                                    <action selector="startBtnTouchUpInside:" destination="YCu-4X-Yhp" eventType="touchUpInside" id="QAj-eu-xCt"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="dR1-WQ-h13" firstAttribute="top" secondItem="5ED-dh-0Vz" secondAttribute="top" id="2Dd-1K-uOt"/>
                                             <constraint firstItem="neZ-Ji-B5T" firstAttribute="leading" secondItem="dR1-WQ-h13" secondAttribute="trailing" id="6DK-Ws-km8"/>
                                             <constraint firstAttribute="height" constant="35" id="HQa-wc-r2u"/>
+                                            <constraint firstItem="oKH-va-62A" firstAttribute="top" secondItem="5ED-dh-0Vz" secondAttribute="top" id="JD4-ew-9KX"/>
+                                            <constraint firstAttribute="trailing" secondItem="oKH-va-62A" secondAttribute="trailing" id="LsU-sU-DrG"/>
+                                            <constraint firstItem="oKH-va-62A" firstAttribute="leading" secondItem="5ED-dh-0Vz" secondAttribute="leading" id="PDQ-gV-sPy"/>
                                             <constraint firstItem="9dA-NV-6i2" firstAttribute="top" secondItem="5ED-dh-0Vz" secondAttribute="top" id="RMe-Yt-imF"/>
                                             <constraint firstAttribute="trailing" secondItem="neZ-Ji-B5T" secondAttribute="trailing" constant="12" id="VYt-Jc-UEZ"/>
                                             <constraint firstAttribute="bottom" secondItem="neZ-Ji-B5T" secondAttribute="bottom" id="WJK-3i-PdG"/>
                                             <constraint firstItem="9dA-NV-6i2" firstAttribute="leading" secondItem="5ED-dh-0Vz" secondAttribute="leading" constant="12" id="bYs-rt-AgV"/>
                                             <constraint firstAttribute="bottom" secondItem="dR1-WQ-h13" secondAttribute="bottom" id="eUx-jD-SVg"/>
+                                            <constraint firstAttribute="bottom" secondItem="oKH-va-62A" secondAttribute="bottom" id="fx1-3h-cWl"/>
                                             <constraint firstItem="neZ-Ji-B5T" firstAttribute="top" secondItem="5ED-dh-0Vz" secondAttribute="top" id="o4n-KT-dLN"/>
                                             <constraint firstAttribute="bottom" secondItem="9dA-NV-6i2" secondAttribute="bottom" id="uRV-An-Adf"/>
                                         </constraints>
@@ -668,15 +678,25 @@
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNo-ch-lls">
+                                                <rect key="frame" x="0.0" y="0.0" width="550" height="35"/>
+                                                <connections>
+                                                    <action selector="endBtnTouchUpInside:" destination="YCu-4X-Yhp" eventType="touchUpInside" id="qQ7-c4-DjO"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="TUN-qP-5dh" secondAttribute="trailing" constant="12" id="29C-rs-Roa"/>
+                                            <constraint firstItem="rNo-ch-lls" firstAttribute="leading" secondItem="fQg-ce-RXr" secondAttribute="leading" id="2Ac-zO-Prv"/>
                                             <constraint firstItem="ekf-dY-EbC" firstAttribute="top" secondItem="fQg-ce-RXr" secondAttribute="top" id="2eC-ne-KAA"/>
                                             <constraint firstItem="TUN-qP-5dh" firstAttribute="leading" secondItem="65z-pW-fVn" secondAttribute="trailing" id="BL1-vw-qoR"/>
+                                            <constraint firstAttribute="bottom" secondItem="rNo-ch-lls" secondAttribute="bottom" id="Ed7-cd-eo9"/>
                                             <constraint firstAttribute="bottom" secondItem="65z-pW-fVn" secondAttribute="bottom" id="H26-Ug-jdf"/>
                                             <constraint firstItem="ekf-dY-EbC" firstAttribute="leading" secondItem="fQg-ce-RXr" secondAttribute="leading" constant="12" id="JvD-qw-9fG"/>
                                             <constraint firstAttribute="bottom" secondItem="ekf-dY-EbC" secondAttribute="bottom" id="MUU-og-z39"/>
+                                            <constraint firstAttribute="trailing" secondItem="rNo-ch-lls" secondAttribute="trailing" id="SBX-5X-XOM"/>
+                                            <constraint firstItem="rNo-ch-lls" firstAttribute="top" secondItem="fQg-ce-RXr" secondAttribute="top" id="SjM-pd-wgx"/>
                                             <constraint firstItem="65z-pW-fVn" firstAttribute="top" secondItem="fQg-ce-RXr" secondAttribute="top" id="U9H-Se-zod"/>
                                             <constraint firstAttribute="bottom" secondItem="TUN-qP-5dh" secondAttribute="bottom" id="ZPg-ZU-18Y"/>
                                             <constraint firstItem="TUN-qP-5dh" firstAttribute="top" secondItem="fQg-ce-RXr" secondAttribute="top" id="oIj-N8-yCn"/>
@@ -750,15 +770,25 @@
                                     <action selector="scheduleBtnTouchUpInside:" destination="YCu-4X-Yhp" eventType="touchUpInside" id="Myq-zG-1tP"/>
                                 </connections>
                             </button>
+                            <datePicker hidden="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="c04-rn-kFL">
+                                <rect key="frame" x="0.0" y="431" width="600" height="120"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <date key="date" timeIntervalSinceReferenceDate="481119206.19390798">
+                                    <!--2016-03-31 12:13:26 +0000-->
+                                </date>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="6hy-bM-1sN" firstAttribute="top" secondItem="Rh4-Q0-bfS" secondAttribute="bottom" constant="16" id="4pb-6h-gSb"/>
                             <constraint firstItem="DJz-Ba-e66" firstAttribute="top" secondItem="hLn-lF-UXa" secondAttribute="bottom" id="86d-Pg-rkG"/>
                             <constraint firstItem="Rh4-Q0-bfS" firstAttribute="top" secondItem="rAL-Us-Zq5" secondAttribute="bottom" constant="20" id="DLq-k5-Pue"/>
+                            <constraint firstItem="c04-rn-kFL" firstAttribute="top" secondItem="qup-HP-JGk" secondAttribute="bottom" id="GEN-qr-kHa"/>
                             <constraint firstItem="rAL-Us-Zq5" firstAttribute="leading" secondItem="yra-eX-Qeo" secondAttribute="leadingMargin" id="IEj-7v-Ajf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="c04-rn-kFL" secondAttribute="trailing" constant="-20" id="JPs-La-u0d"/>
                             <constraint firstItem="hLn-lF-UXa" firstAttribute="top" secondItem="U0O-qJ-QLX" secondAttribute="bottom" id="MvC-a7-tCg"/>
                             <constraint firstItem="Rh4-Q0-bfS" firstAttribute="leading" secondItem="yra-eX-Qeo" secondAttribute="leadingMargin" constant="5" id="R7n-Af-lIN"/>
+                            <constraint firstItem="c04-rn-kFL" firstAttribute="leading" secondItem="yra-eX-Qeo" secondAttribute="leadingMargin" constant="-20" id="RYl-mM-MeM"/>
                             <constraint firstItem="hLn-lF-UXa" firstAttribute="leading" secondItem="yra-eX-Qeo" secondAttribute="leadingMargin" constant="-20" id="RZs-Rq-JWR"/>
                             <constraint firstItem="rAL-Us-Zq5" firstAttribute="trailing" secondItem="yra-eX-Qeo" secondAttribute="trailingMargin" id="Rsh-ae-FAA"/>
                             <constraint firstAttribute="trailingMargin" secondItem="qup-HP-JGk" secondAttribute="trailing" constant="5" id="Xnr-ZV-rlw"/>
@@ -769,16 +799,20 @@
                             <constraint firstAttribute="trailingMargin" secondItem="6hy-bM-1sN" secondAttribute="trailing" constant="5" id="odT-oV-BVa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Rh4-Q0-bfS" secondAttribute="trailing" constant="5" id="qeq-76-RvO"/>
                             <constraint firstItem="6hy-bM-1sN" firstAttribute="leading" secondItem="yra-eX-Qeo" secondAttribute="leadingMargin" constant="5" id="roq-gj-daN"/>
+                            <constraint firstItem="DJz-Ba-e66" firstAttribute="top" secondItem="c04-rn-kFL" secondAttribute="bottom" id="sYq-oT-Obj"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="allDaySwitch" destination="B7k-rn-Wsd" id="jhq-68-TVl"/>
                         <outlet property="availabilitySegCtrl" destination="UaX-EP-UWf" id="ltZ-Ma-ajB"/>
+                        <outlet property="datePicker" destination="c04-rn-kFL" id="qUP-b6-3Dt"/>
+                        <outlet property="endBtn" destination="rNo-ch-lls" id="RMq-FE-b6y"/>
                         <outlet property="endDateLabel" destination="65z-pW-fVn" id="Bh9-qy-yNL"/>
                         <outlet property="endTimeLabel" destination="TUN-qP-5dh" id="cFK-BL-d4x"/>
                         <outlet property="locationTF" destination="6hc-Qm-Qfv" id="TOO-4P-PaO"/>
                         <outlet property="scheduleBtn" destination="qup-HP-JGk" id="xFa-6c-1la"/>
                         <outlet property="scheduleView" destination="6hy-bM-1sN" id="ru0-t4-yKJ"/>
+                        <outlet property="startBtn" destination="oKH-va-62A" id="kaG-ub-SAY"/>
                         <outlet property="startDateLabel" destination="dR1-WQ-h13" id="TpX-77-5r4"/>
                         <outlet property="startTimeLabel" destination="neZ-Ji-B5T" id="g7Q-L5-y89"/>
                         <outlet property="titleLabel" destination="rAL-Us-Zq5" id="x9B-x1-ALj"/>

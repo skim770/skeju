@@ -61,7 +61,7 @@ class LoginController: UIViewController, UITextFieldDelegate {
                             
                             let request = NSMutableURLRequest(URL: NSURL(string: "http://api-skeju.rhcloud.com/user")!)
                             request.HTTPMethod = "POST"
-                            let postString = "id=\(fname)&fbId=\(fid)"
+                            let postString = "id=\(fname as! String)&fbId=\(fid as! String)"
                             request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
                             let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
                                 guard error == nil && data != nil else {                                                          // check for fundamental networking error

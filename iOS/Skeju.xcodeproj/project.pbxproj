@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A71B13861C8D50EA001FA36C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71B13851C8D50EA001FA36C /* TabBarController.swift */; };
+		A71F46361C8E5C72001DFCF5 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71F46351C8E5C72001DFCF5 /* EventKit.framework */; };
+		A71F46381C8E5C79001DFCF5 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A71F46371C8E5C79001DFCF5 /* EventKitUI.framework */; };
+		A76CBFAA1C8EDBA1009414E3 /* DayPlannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76CBFA91C8EDBA1009414E3 /* DayPlannerController.swift */; };
 		A79B50861C7636E600E61787 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B50851C7636E600E61787 /* AppDelegate.swift */; };
-		A79B50881C7636E600E61787 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B50871C7636E600E61787 /* FirstViewController.swift */; };
-		A79B508A1C7636E600E61787 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B50891C7636E600E61787 /* SecondViewController.swift */; };
 		A79B508D1C7636E600E61787 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79B508B1C7636E600E61787 /* Main.storyboard */; };
 		A79B508F1C7636E600E61787 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A79B508E1C7636E600E61787 /* Assets.xcassets */; };
 		A79B50921C7636E600E61787 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79B50901C7636E600E61787 /* LaunchScreen.storyboard */; };
 		A79B509D1C7636E600E61787 /* SkejuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B509C1C7636E600E61787 /* SkejuTests.swift */; };
 		A79B50A81C7636E600E61787 /* SkejuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B50A71C7636E600E61787 /* SkejuUITests.swift */; };
+		A7E270E41C8D1F9D00BDCD4E /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E270E31C8D1F9D00BDCD4E /* LoginController.swift */; };
+		A7E270E61C8D392300BDCD4E /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E270E51C8D392300BDCD4E /* CalendarController.swift */; };
+		A7E270E81C8D3C6100BDCD4E /* FindPeopleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E270E71C8D3C6100BDCD4E /* FindPeopleController.swift */; };
+		A7E270EA1C8D3C6D00BDCD4E /* ScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E270E91C8D3C6D00BDCD4E /* ScheduleController.swift */; };
+		A7F1E6C31CAC4E15004056A6 /* AddEventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F1E6C21CAC4E15004056A6 /* AddEventController.swift */; };
+		D36512AC1F9E62504DE74E19 /* Pods_Skeju.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089B392B592F6E3A95733F6B /* Pods_Skeju.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +43,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		089B392B592F6E3A95733F6B /* Pods_Skeju.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Skeju.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FC967731359CBEEA3AB6943 /* Pods-Skeju.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skeju.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Skeju/Pods-Skeju.debug.xcconfig"; sourceTree = "<group>"; };
+		51C26B378F5ED9F9D62A8251 /* Pods-SkejuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkejuTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SkejuTests/Pods-SkejuTests.release.xcconfig"; sourceTree = "<group>"; };
+		A22E41EEBF36C2531F76EEFA /* Pods-SkejuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkejuTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SkejuTests/Pods-SkejuTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A71B13851C8D50EA001FA36C /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		A71F46351C8E5C72001DFCF5 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		A71F46371C8E5C79001DFCF5 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		A76CBFA91C8EDBA1009414E3 /* DayPlannerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayPlannerController.swift; sourceTree = "<group>"; };
 		A79B50821C7636E600E61787 /* Skeju.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skeju.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A79B50851C7636E600E61787 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A79B50871C7636E600E61787 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		A79B50891C7636E600E61787 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		A79B508C1C7636E600E61787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A79B508E1C7636E600E61787 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A79B50911C7636E600E61787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +63,12 @@
 		A79B50A31C7636E600E61787 /* SkejuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkejuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A79B50A71C7636E600E61787 /* SkejuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkejuUITests.swift; sourceTree = "<group>"; };
 		A79B50A91C7636E600E61787 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7E270E31C8D1F9D00BDCD4E /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		A7E270E51C8D392300BDCD4E /* CalendarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarController.swift; sourceTree = "<group>"; };
+		A7E270E71C8D3C6100BDCD4E /* FindPeopleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindPeopleController.swift; sourceTree = "<group>"; };
+		A7E270E91C8D3C6D00BDCD4E /* ScheduleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleController.swift; sourceTree = "<group>"; };
+		A7F1E6C21CAC4E15004056A6 /* AddEventController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventController.swift; sourceTree = "<group>"; };
+		E3457C69ECCCCB85E17E97F4 /* Pods-Skeju.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skeju.release.xcconfig"; path = "Pods/Target Support Files/Pods-Skeju/Pods-Skeju.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A71F46381C8E5C79001DFCF5 /* EventKitUI.framework in Frameworks */,
+				A71F46361C8E5C72001DFCF5 /* EventKit.framework in Frameworks */,
+				D36512AC1F9E62504DE74E19 /* Pods_Skeju.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +102,12 @@
 		A79B50791C7636E600E61787 = {
 			isa = PBXGroup;
 			children = (
+				A7E270D31C8D1E6500BDCD4E /* Frameworks */,
 				A79B50841C7636E600E61787 /* Skeju */,
 				A79B509B1C7636E600E61787 /* SkejuTests */,
 				A79B50A61C7636E600E61787 /* SkejuUITests */,
 				A79B50831C7636E600E61787 /* Products */,
+				BD3AC275C8E0F429F01440E4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,12 +125,17 @@
 			isa = PBXGroup;
 			children = (
 				A79B50851C7636E600E61787 /* AppDelegate.swift */,
-				A79B50871C7636E600E61787 /* FirstViewController.swift */,
-				A79B50891C7636E600E61787 /* SecondViewController.swift */,
 				A79B508B1C7636E600E61787 /* Main.storyboard */,
 				A79B508E1C7636E600E61787 /* Assets.xcassets */,
 				A79B50901C7636E600E61787 /* LaunchScreen.storyboard */,
 				A79B50931C7636E600E61787 /* Info.plist */,
+				A7E270E31C8D1F9D00BDCD4E /* LoginController.swift */,
+				A7E270E51C8D392300BDCD4E /* CalendarController.swift */,
+				A7E270E71C8D3C6100BDCD4E /* FindPeopleController.swift */,
+				A7E270E91C8D3C6D00BDCD4E /* ScheduleController.swift */,
+				A71B13851C8D50EA001FA36C /* TabBarController.swift */,
+				A76CBFA91C8EDBA1009414E3 /* DayPlannerController.swift */,
+				A7F1E6C21CAC4E15004056A6 /* AddEventController.swift */,
 			);
 			path = Skeju;
 			sourceTree = "<group>";
@@ -128,6 +158,27 @@
 			path = SkejuUITests;
 			sourceTree = "<group>";
 		};
+		A7E270D31C8D1E6500BDCD4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A71F46371C8E5C79001DFCF5 /* EventKitUI.framework */,
+				A71F46351C8E5C72001DFCF5 /* EventKit.framework */,
+				089B392B592F6E3A95733F6B /* Pods_Skeju.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD3AC275C8E0F429F01440E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FC967731359CBEEA3AB6943 /* Pods-Skeju.debug.xcconfig */,
+				E3457C69ECCCCB85E17E97F4 /* Pods-Skeju.release.xcconfig */,
+				A22E41EEBF36C2531F76EEFA /* Pods-SkejuTests.debug.xcconfig */,
+				51C26B378F5ED9F9D62A8251 /* Pods-SkejuTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A79B50AC1C7636E600E61787 /* Build configuration list for PBXNativeTarget "Skeju" */;
 			buildPhases = (
+				AD8766C61A54E902F0E691FA /* Check Pods Manifest.lock */,
 				A79B507E1C7636E600E61787 /* Sources */,
 				A79B507F1C7636E600E61787 /* Frameworks */,
 				A79B50801C7636E600E61787 /* Resources */,
+				FEF9A23C231BE70B877E6A73 /* Embed Pods Frameworks */,
+				1764CF619F362C8D7D7900F3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +206,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A79B50AF1C7636E600E61787 /* Build configuration list for PBXNativeTarget "SkejuTests" */;
 			buildPhases = (
+				86407056D3C77B76B70B79B0 /* Check Pods Manifest.lock */,
 				A79B50941C7636E600E61787 /* Sources */,
 				A79B50951C7636E600E61787 /* Frameworks */,
 				A79B50961C7636E600E61787 /* Resources */,
+				BFBA57908DA1FB1C72341BB9 /* Embed Pods Frameworks */,
+				0DB33ED66620F50DEBDCF3C3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,6 +253,7 @@
 				TargetAttributes = {
 					A79B50811C7636E600E61787 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = F6ZL37J38S;
 					};
 					A79B50971C7636E600E61787 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -254,14 +312,112 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0DB33ED66620F50DEBDCF3C3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SkejuTests/Pods-SkejuTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1764CF619F362C8D7D7900F3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Skeju/Pods-Skeju-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86407056D3C77B76B70B79B0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AD8766C61A54E902F0E691FA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BFBA57908DA1FB1C72341BB9 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SkejuTests/Pods-SkejuTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEF9A23C231BE70B877E6A73 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Skeju/Pods-Skeju-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A79B507E1C7636E600E61787 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A79B508A1C7636E600E61787 /* SecondViewController.swift in Sources */,
+				A7E270E41C8D1F9D00BDCD4E /* LoginController.swift in Sources */,
+				A7E270EA1C8D3C6D00BDCD4E /* ScheduleController.swift in Sources */,
+				A7F1E6C31CAC4E15004056A6 /* AddEventController.swift in Sources */,
+				A71B13861C8D50EA001FA36C /* TabBarController.swift in Sources */,
+				A7E270E61C8D392300BDCD4E /* CalendarController.swift in Sources */,
 				A79B50861C7636E600E61787 /* AppDelegate.swift in Sources */,
-				A79B50881C7636E600E61787 /* FirstViewController.swift in Sources */,
+				A76CBFAA1C8EDBA1009414E3 /* DayPlannerController.swift in Sources */,
+				A7E270E81C8D3C6100BDCD4E /* FindPeopleController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,28 +555,47 @@
 		};
 		A79B50AD1C7636E600E61787 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FC967731359CBEEA3AB6943 /* Pods-Skeju.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/FacebookSDK",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Skeju/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cs4261.Skeju;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		A79B50AE1C7636E600E61787 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3457C69ECCCCB85E17E97F4 /* Pods-Skeju.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/FacebookSDK",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Skeju/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cs4261.Skeju;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
 		A79B50B01C7636E600E61787 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A22E41EEBF36C2531F76EEFA /* Pods-SkejuTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SkejuTests/Info.plist;
@@ -433,6 +608,7 @@
 		};
 		A79B50B11C7636E600E61787 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51C26B378F5ED9F9D62A8251 /* Pods-SkejuTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SkejuTests/Info.plist;
@@ -486,6 +662,7 @@
 				A79B50AE1C7636E600E61787 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A79B50AF1C7636E600E61787 /* Build configuration list for PBXNativeTarget "SkejuTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +671,7 @@
 				A79B50B11C7636E600E61787 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A79B50B21C7636E600E61787 /* Build configuration list for PBXNativeTarget "SkejuUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +680,7 @@
 				A79B50B41C7636E600E61787 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="gyv.css" ?>    
+<svg width="1000" height="825">
+	<g id="yard slot">
+		
+		<rect class="Slot"  id="Green;Grn01;L;1001;slot" x="0" y="105.52" width="21.1" height="105.52" dockzone="Green"  doorslot="Grn01" />
+<rect class="Slot"  id="Green;Grn02;L;1002;slot" x="21.1" y="105.52" width="21.1" height="105.52" dockzone="Green"  doorslot="Grn02" />
+<rect class="Slot"  id="Green;Grn03;L;1003;slot" x="42.21" y="105.52" width="21.1" height="105.52" dockzone="Green"  doorslot="Grn03" />
+<rect class="Slot"  id="Green;Grn04;L;1004;slot" x="63.31" y="105.52" width="21.1" height="105.52" dockzone="Green"  doorslot="Grn04" />
+<rect class="Slot"  id="Green;Grn05;L;1005;slot" x="84.42" y="105.52" width="21.1" height="105.52" dockzone="Green"  doorslot="Grn05" />
+<rect class="Slot"  id="Green;Grn06;L;1006;slot" x="105.52" y="105.52" width="21.1" height="105.52" dockzone="Green"  doorslot="Grn06" />
+<rect class="Slot"  id="Green;Grn07;L;1007;slot" x="126.63" y="105.52" width="21.1" height="105.52" dockzone="Green"  doorslot="Grn07" />
+<rect class="Slot"  id="Green;Grn08;L;1008;slot" x="147.73" y="105.52" width="21.1" height="105.52" dockzone="Green"  doorslot="Grn08" />
+<rect class="Slot"  id="Green;Grn09;L;1009;slot" x="168.84" y="105.52" width="21.1" height="105.52" dockzone="Green"  doorslot="Grn09" />
+<rect class="Slot"  id="Green;Grn10;L;1010;slot" x="189.94" y="105.52" width="21.1" height="105.52" dockzone="Green"  doorslot="Grn10" />
+<rect class="Slot"  id="Green;Grn11;L;1011;slot" x="0" y="0" width="21.1" height="105.52" dockzone="Green"  doorslot="Grn11" />
+<rect class="Slot"  id="Green;Grn12;L;1012;slot" x="21.1" y="0" width="21.1" height="105.52" dockzone="Green"  doorslot="Grn12" />
+<rect class="Slot"  id="Green;Grn13;L;1013;slot" x="42.21" y="0" width="21.1" height="105.52" dockzone="Green"  doorslot="Grn13" />
+<rect class="Slot"  id="Green;Grn14;L;1014;slot" x="63.31" y="0" width="21.1" height="105.52" dockzone="Green"  doorslot="Grn14" />
+<rect class="Slot"  id="Green;Grn15;L;1015;slot" x="84.42" y="0" width="21.1" height="105.52" dockzone="Green"  doorslot="Grn15" />
+<rect class="Slot"  id="Green;Grn16;L;1016;slot" x="105.52" y="0" width="21.1" height="105.52" dockzone="Green"  doorslot="Grn16" />
+<rect class="Slot"  id="Green;Grn17;L;1017;slot" x="126.63" y="0" width="21.1" height="105.52" dockzone="Green"  doorslot="Grn17" />
+<rect class="Slot"  id="Green;Grn18;L;1018;slot" x="147.73" y="0" width="21.1" height="105.52" dockzone="Green"  doorslot="Grn18" />
+<rect class="Slot"  id="Green;Grn19;L;1019;slot" x="168.84" y="0" width="21.1" height="105.52" dockzone="Green"  doorslot="Grn19" />
+<rect class="Slot"  id="Green;Grn20;L;1020;slot" x="189.94" y="0" width="21.1" height="105.52" dockzone="Green"  doorslot="Grn20" />
+<rect class="Slot"  id="Orange;Orng01;L;2001;slot" x="0" y="613.95" width="21.1" height="105.52" dockzone="Orange"  doorslot="Orng01" />
+<rect class="Slot"  id="Orange;Orng02;L;2002;slot" x="21.1" y="613.95" width="21.1" height="105.52" dockzone="Orange"  doorslot="Orng02" />
+<rect class="Slot"  id="Orange;Orng03;L;2003;slot" x="42.21" y="613.95" width="21.1" height="105.52" dockzone="Orange"  doorslot="Orng03" />
+<rect class="Slot"  id="Orange;Orng04;L;2004;slot" x="63.31" y="613.95" width="21.1" height="105.52" dockzone="Orange"  doorslot="Orng04" />
+<rect class="Slot"  id="Orange;Orng05;L;2005;slot" x="84.42" y="613.95" width="21.1" height="105.52" dockzone="Orange"  doorslot="Orng05" />
+<rect class="Slot"  id="Orange;Orng06;L;2006;slot" x="105.52" y="613.95" width="21.1" height="105.52" dockzone="Orange"  doorslot="Orng06" />
+<rect class="Slot"  id="Orange;Orng07;L;2007;slot" x="126.63" y="613.95" width="21.1" height="105.52" dockzone="Orange"  doorslot="Orng07" />
+<rect class="Slot"  id="Orange;Orng08;L;2008;slot" x="147.73" y="613.95" width="21.1" height="105.52" dockzone="Orange"  doorslot="Orng08" />
+<rect class="Slot"  id="Orange;Orng09;L;2009;slot" x="168.84" y="613.95" width="21.1" height="105.52" dockzone="Orange"  doorslot="Orng09" />
+<rect class="Slot"  id="Orange;Orng10;L;2010;slot" x="189.94" y="613.95" width="21.1" height="105.52" dockzone="Orange"  doorslot="Orng10" />
+<rect class="Slot"  id="Orange;Orng11;L;2011;slot" x="0" y="719.48" width="21.1" height="105.52" dockzone="Orange"  doorslot="Orng11" />
+<rect class="Slot"  id="Orange;Orng12;L;2012;slot" x="21.1" y="719.48" width="21.1" height="105.52" dockzone="Orange"  doorslot="Orng12" />
+<rect class="Slot"  id="Orange;Orng13;L;2013;slot" x="42.21" y="719.48" width="21.1" height="105.52" dockzone="Orange"  doorslot="Orng13" />
+<rect class="Slot"  id="Orange;Orng14;L;2014;slot" x="63.31" y="719.48" width="21.1" height="105.52" dockzone="Orange"  doorslot="Orng14" />
+<rect class="Slot"  id="Orange;Orng15;L;2015;slot" x="84.42" y="719.48" width="21.1" height="105.52" dockzone="Orange"  doorslot="Orng15" />
+<rect class="Slot"  id="Orange;Orng16;L;2016;slot" x="105.52" y="719.48" width="21.1" height="105.52" dockzone="Orange"  doorslot="Orng16" />
+<rect class="Slot"  id="Orange;Orng17;L;2017;slot" x="126.63" y="719.48" width="21.1" height="105.52" dockzone="Orange"  doorslot="Orng17" />
+<rect class="Slot"  id="Orange;Orng18;L;2018;slot" x="147.73" y="719.48" width="21.1" height="105.52" dockzone="Orange"  doorslot="Orng18" />
+<rect class="Slot"  id="Orange;Orng19;L;2019;slot" x="168.84" y="719.48" width="21.1" height="105.52" dockzone="Orange"  doorslot="Orng19" />
+<rect class="Slot"  id="Orange;Orng20;L;2020;slot" x="189.94" y="719.48" width="21.1" height="105.52" dockzone="Orange"  doorslot="Orng20" />
+<rect class="Slot"  id="Purple;Prpl01;L;3001;slot" x="306.98" y="105.52" width="21.1" height="105.52" dockzone="Purple"  doorslot="Prpl01" />
+<rect class="Slot"  id="Purple;Prpl02;L;3002;slot" x="328.08" y="105.52" width="21.1" height="105.52" dockzone="Purple"  doorslot="Prpl02" />
+<rect class="Slot"  id="Purple;Prpl03;L;3003;slot" x="349.19" y="105.52" width="21.1" height="105.52" dockzone="Purple"  doorslot="Prpl03" />
+<rect class="Slot"  id="Purple;Prpl04;L;3004;slot" x="370.29" y="105.52" width="21.1" height="105.52" dockzone="Purple"  doorslot="Prpl04" />
+<rect class="Slot"  id="Purple;Prpl05;L;3005;slot" x="391.4" y="105.52" width="21.1" height="105.52" dockzone="Purple"  doorslot="Prpl05" />
+<rect class="Slot"  id="Purple;Prpl06;L;3006;slot" x="412.5" y="105.52" width="21.1" height="105.52" dockzone="Purple"  doorslot="Prpl06" />
+<rect class="Slot"  id="Purple;Prpl07;L;3007;slot" x="433.6" y="105.52" width="21.1" height="105.52" dockzone="Purple"  doorslot="Prpl07" />
+<rect class="Slot"  id="Purple;Prpl08;L;3008;slot" x="454.71" y="105.52" width="21.1" height="105.52" dockzone="Purple"  doorslot="Prpl08" />
+<rect class="Slot"  id="Purple;Prpl09;L;3009;slot" x="475.81" y="105.52" width="21.1" height="105.52" dockzone="Purple"  doorslot="Prpl09" />
+<rect class="Slot"  id="Purple;Prpl10;L;3010;slot" x="496.92" y="105.52" width="21.1" height="105.52" dockzone="Purple"  doorslot="Prpl10" />
+<rect class="Slot"  id="Purple;Prpl11;L;3011;slot" x="306.98" y="0" width="21.1" height="105.52" dockzone="Purple"  doorslot="Prpl11" />
+<rect class="Slot"  id="Purple;Prpl12;L;3012;slot" x="328.08" y="0" width="21.1" height="105.52" dockzone="Purple"  doorslot="Prpl12" />
+<rect class="Slot"  id="Purple;Prpl13;L;3013;slot" x="349.19" y="0" width="21.1" height="105.52" dockzone="Purple"  doorslot="Prpl13" />
+<rect class="Slot"  id="Purple;Prpl14;L;3014;slot" x="370.29" y="0" width="21.1" height="105.52" dockzone="Purple"  doorslot="Prpl14" />
+<rect class="Slot"  id="Purple;Prpl15;L;3015;slot" x="391.4" y="0" width="21.1" height="105.52" dockzone="Purple"  doorslot="Prpl15" />
+<rect class="Slot"  id="Purple;Prpl16;L;3016;slot" x="412.5" y="0" width="21.1" height="105.52" dockzone="Purple"  doorslot="Prpl16" />
+<rect class="Slot"  id="Purple;Prpl17;L;3017;slot" x="433.6" y="0" width="21.1" height="105.52" dockzone="Purple"  doorslot="Prpl17" />
+<rect class="Slot"  id="Purple;Prpl18;L;3018;slot" x="454.71" y="0" width="21.1" height="105.52" dockzone="Purple"  doorslot="Prpl18" />
+<rect class="Slot"  id="Purple;Prpl19;L;3019;slot" x="475.81" y="0" width="21.1" height="105.52" dockzone="Purple"  doorslot="Prpl19" />
+<rect class="Slot"  id="Purple;Prpl20;L;3020;slot" x="496.92" y="0" width="21.1" height="105.52" dockzone="Purple"  doorslot="Prpl20" />
+<rect class="Slot"  id="Pink;Pnk01;L;3001;slot" x="306.98" y="613.95" width="21.1" height="105.52" dockzone="Pink"  doorslot="Pnk01" />
+<rect class="Slot"  id="Pink;Pnk02;L;3002;slot" x="328.08" y="613.95" width="21.1" height="105.52" dockzone="Pink"  doorslot="Pnk02" />
+<rect class="Slot"  id="Pink;Pnk03;L;3003;slot" x="349.19" y="613.95" width="21.1" height="105.52" dockzone="Pink"  doorslot="Pnk03" />
+<rect class="Slot"  id="Pink;Pnk04;L;3004;slot" x="370.29" y="613.95" width="21.1" height="105.52" dockzone="Pink"  doorslot="Pnk04" />
+<rect class="Slot"  id="Pink;Pnk05;L;3005;slot" x="391.4" y="613.95" width="21.1" height="105.52" dockzone="Pink"  doorslot="Pnk05" />
+<rect class="Slot"  id="Pink;Pnk06;L;3006;slot" x="412.5" y="613.95" width="21.1" height="105.52" dockzone="Pink"  doorslot="Pnk06" />
+<rect class="Slot"  id="Pink;Pnk07;L;3007;slot" x="433.6" y="613.95" width="21.1" height="105.52" dockzone="Pink"  doorslot="Pnk07" />
+<rect class="Slot"  id="Pink;Pnk08;L;3008;slot" x="454.71" y="613.95" width="21.1" height="105.52" dockzone="Pink"  doorslot="Pnk08" />
+<rect class="Slot"  id="Pink;Pnk09;L;3009;slot" x="475.81" y="613.95" width="21.1" height="105.52" dockzone="Pink"  doorslot="Pnk09" />
+<rect class="Slot"  id="Pink;Pnk10;L;3010;slot" x="496.92" y="613.95" width="21.1" height="105.52" dockzone="Pink"  doorslot="Pnk10" />
+<rect class="Slot"  id="Pink;Pnk11;L;3011;slot" x="306.98" y="719.48" width="21.1" height="105.52" dockzone="Pink"  doorslot="Pnk11" />
+<rect class="Slot"  id="Pink;Pnk12;L;3012;slot" x="328.08" y="719.48" width="21.1" height="105.52" dockzone="Pink"  doorslot="Pnk12" />
+<rect class="Slot"  id="Pink;Pnk13;L;3013;slot" x="349.19" y="719.48" width="21.1" height="105.52" dockzone="Pink"  doorslot="Pnk13" />
+<rect class="Slot"  id="Pink;Pnk14;L;3014;slot" x="370.29" y="719.48" width="21.1" height="105.52" dockzone="Pink"  doorslot="Pnk14" />
+<rect class="Slot"  id="Pink;Pnk15;L;3015;slot" x="391.4" y="719.48" width="21.1" height="105.52" dockzone="Pink"  doorslot="Pnk15" />
+<rect class="Slot"  id="Pink;Pnk16;L;3016;slot" x="412.5" y="719.48" width="21.1" height="105.52" dockzone="Pink"  doorslot="Pnk16" />
+<rect class="Slot"  id="Pink;Pnk17;L;3017;slot" x="433.6" y="719.48" width="21.1" height="105.52" dockzone="Pink"  doorslot="Pnk17" />
+<rect class="Slot"  id="Pink;Pnk18;L;3018;slot" x="454.71" y="719.48" width="21.1" height="105.52" dockzone="Pink"  doorslot="Pnk18" />
+<rect class="Slot"  id="Pink;Pnk19;L;3019;slot" x="475.81" y="719.48" width="21.1" height="105.52" dockzone="Pink"  doorslot="Pnk19" />
+<rect class="Slot"  id="Pink;Pnk20;L;3020;slot" x="496.92" y="719.48" width="21.1" height="105.52" dockzone="Pink"  doorslot="Pnk20" />
+<rect class="Slot"  id="Guard;Grd01;L;9001;slot" x="613.95" y="306.98" width="21.1" height="105.52" dockzone="Guard"  doorslot="Grd01" />
+<rect class="Slot"  id="Guard;Grd02;L;9002;slot" x="635.06" y="306.98" width="21.1" height="105.52" dockzone="Guard"  doorslot="Grd02" />
+<rect class="Slot"  id="Guard;Grd03;L;9003;slot" x="656.16" y="306.98" width="21.1" height="105.52" dockzone="Guard"  doorslot="Grd03" />
+<rect class="Slot"  id="Guard;Grd04;L;9004;slot" x="677.27" y="306.98" width="21.1" height="105.52" dockzone="Guard"  doorslot="Grd04" />
+<rect class="Slot"  id="Guard;Grd05;L;9005;slot" x="698.37" y="306.98" width="21.1" height="105.52" dockzone="Guard"  doorslot="Grd05" />
+<rect class="Slot"  id="Guard;Grd06;L;9006;slot" x="613.95" y="412.5" width="21.1" height="105.52" dockzone="Guard"  doorslot="Grd06" />
+<rect class="Slot"  id="Guard;Grd07;L;9007;slot" x="635.06" y="412.5" width="21.1" height="105.52" dockzone="Guard"  doorslot="Grd07" />
+<rect class="Slot"  id="Guard;Grd08;L;9008;slot" x="656.16" y="412.5" width="21.1" height="105.52" dockzone="Guard"  doorslot="Grd08" />
+<rect class="Slot"  id="Guard;Grd09;L;9009;slot" x="677.27" y="412.5" width="21.1" height="105.52" dockzone="Guard"  doorslot="Grd09" />
+<rect class="Slot"  id="Guard;Grd10;L;9010;slot" x="698.37" y="412.5" width="21.1" height="105.52" dockzone="Guard"  doorslot="Grd10" />
+
+		
+	</g>
+	<g id="dock door">
+	
+		<rect class="Door"  id="Inbound;IN01;L;11001;door" x="0" y="306.98" width="21.1" height="105.52" dockzone="Inbound"  doorslot="IN01" />
+<rect class="Door"  id="Inbound;IN02;L;11002;door" x="21.1" y="306.98" width="21.1" height="105.52" dockzone="Inbound"  doorslot="IN02" />
+<rect class="Door"  id="Inbound;IN03;L;11003;door" x="42.21" y="306.98" width="21.1" height="105.52" dockzone="Inbound"  doorslot="IN03" />
+<rect class="Door"  id="Inbound;IN04;L;11004;door" x="63.31" y="306.98" width="21.1" height="105.52" dockzone="Inbound"  doorslot="IN04" />
+<rect class="Door"  id="Inbound;IN05;L;11005;door" x="84.42" y="306.98" width="21.1" height="105.52" dockzone="Inbound"  doorslot="IN05" />
+<rect class="Door"  id="Inbound;IN06;L;11006;door" x="105.52" y="306.98" width="21.1" height="105.52" dockzone="Inbound"  doorslot="IN06" />
+<rect class="Door"  id="Inbound;IN07;L;11007;door" x="126.63" y="306.98" width="21.1" height="105.52" dockzone="Inbound"  doorslot="IN07" />
+<rect class="Door"  id="Inbound;IN08;L;11008;door" x="147.73" y="306.98" width="21.1" height="105.52" dockzone="Inbound"  doorslot="IN08" />
+<rect class="Door"  id="Inbound;IN09;L;11009;door" x="168.84" y="306.98" width="21.1" height="105.52" dockzone="Inbound"  doorslot="IN09" />
+<rect class="Door"  id="Inbound;IN10;L;11010;door" x="189.94" y="306.98" width="21.1" height="105.52" dockzone="Inbound"  doorslot="IN10" />
+<rect class="Door"  id="Outbound;Out01;L;11001;door" x="306.98" y="306.98" width="21.1" height="105.52" dockzone="Outbound"  doorslot="Out01" />
+<rect class="Door"  id="Outbound;Out02;L;11002;door" x="328.08" y="306.98" width="21.1" height="105.52" dockzone="Outbound"  doorslot="Out02" />
+<rect class="Door"  id="Outbound;Out03;L;11003;door" x="349.19" y="306.98" width="21.1" height="105.52" dockzone="Outbound"  doorslot="Out03" />
+<rect class="Door"  id="Outbound;Out04;L;11004;door" x="370.29" y="306.98" width="21.1" height="105.52" dockzone="Outbound"  doorslot="Out04" />
+<rect class="Door"  id="Outbound;Out05;L;11005;door" x="391.4" y="306.98" width="21.1" height="105.52" dockzone="Outbound"  doorslot="Out05" />
+<rect class="Door"  id="Outbound;Out06;L;11006;door" x="412.5" y="306.98" width="21.1" height="105.52" dockzone="Outbound"  doorslot="Out06" />
+<rect class="Door"  id="Outbound;Out07;L;11007;door" x="433.6" y="306.98" width="21.1" height="105.52" dockzone="Outbound"  doorslot="Out07" />
+<rect class="Door"  id="Outbound;Out08;L;11008;door" x="454.71" y="306.98" width="21.1" height="105.52" dockzone="Outbound"  doorslot="Out08" />
+<rect class="Door"  id="Outbound;Out09;L;11009;door" x="475.81" y="306.98" width="21.1" height="105.52" dockzone="Outbound"  doorslot="Out09" />
+<rect class="Door"  id="Outbound;Out10;L;11010;door" x="496.92" y="306.98" width="21.1" height="105.52" dockzone="Outbound"  doorslot="Out10" />
+		
+	</g>
+	
+	
+<polygon class="facility" points="
+0,412.5
+211.05,412.5
+211.05,306.98
+306.98,306.98
+306.98,412.5
+518.02,412.5
+518.02,518.02
+0,518.02
+0,412.5
+" />
+
+<polygon class="shack" points="
+767.44,518.02
+767.44,306.98
+815.41,306.98
+815.41,518.02
+767.44,518.02
+" />
+
+<text x="10.55" y="158.28" transform="rotate(270 10.55 158.28)" text-anchor="middle" alignment-baseline="middle">Grn01</text>
+<text x="31.65" y="158.28" transform="rotate(270 31.65 158.28)" text-anchor="middle" alignment-baseline="middle">Grn02</text>
+<text x="52.76" y="158.28" transform="rotate(270 52.76 158.28)" text-anchor="middle" alignment-baseline="middle">Grn03</text>
+<text x="73.86" y="158.28" transform="rotate(270 73.86 158.28)" text-anchor="middle" alignment-baseline="middle">Grn04</text>
+<text x="94.97" y="158.28" transform="rotate(270 94.97 158.28)" text-anchor="middle" alignment-baseline="middle">Grn05</text>
+<text x="116.07" y="158.28" transform="rotate(270 116.07 158.28)" text-anchor="middle" alignment-baseline="middle">Grn06</text>
+<text x="137.18" y="158.28" transform="rotate(270 137.18 158.28)" text-anchor="middle" alignment-baseline="middle">Grn07</text>
+<text x="158.28" y="158.28" transform="rotate(270 158.28 158.28)" text-anchor="middle" alignment-baseline="middle">Grn08</text>
+<text x="179.39" y="158.28" transform="rotate(270 179.39 158.28)" text-anchor="middle" alignment-baseline="middle">Grn09</text>
+<text x="200.49" y="158.28" transform="rotate(270 200.49 158.28)" text-anchor="middle" alignment-baseline="middle">Grn10</text>
+<text x="10.55" y="52.76" transform="rotate(270 10.55 52.76)" text-anchor="middle" alignment-baseline="middle">Grn11</text>
+<text x="31.65" y="52.76" transform="rotate(270 31.65 52.76)" text-anchor="middle" alignment-baseline="middle">Grn12</text>
+<text x="52.76" y="52.76" transform="rotate(270 52.76 52.76)" text-anchor="middle" alignment-baseline="middle">Grn13</text>
+<text x="73.86" y="52.76" transform="rotate(270 73.86 52.76)" text-anchor="middle" alignment-baseline="middle">Grn14</text>
+<text x="94.97" y="52.76" transform="rotate(270 94.97 52.76)" text-anchor="middle" alignment-baseline="middle">Grn15</text>
+<text x="116.07" y="52.76" transform="rotate(270 116.07 52.76)" text-anchor="middle" alignment-baseline="middle">Grn16</text>
+<text x="137.18" y="52.76" transform="rotate(270 137.18 52.76)" text-anchor="middle" alignment-baseline="middle">Grn17</text>
+<text x="158.28" y="52.76" transform="rotate(270 158.28 52.76)" text-anchor="middle" alignment-baseline="middle">Grn18</text>
+<text x="179.39" y="52.76" transform="rotate(270 179.39 52.76)" text-anchor="middle" alignment-baseline="middle">Grn19</text>
+<text x="200.49" y="52.76" transform="rotate(270 200.49 52.76)" text-anchor="middle" alignment-baseline="middle">Grn20</text>
+<text x="10.55" y="666.71" transform="rotate(270 10.55 666.71)" text-anchor="middle" alignment-baseline="middle">Orng01</text>
+<text x="31.65" y="666.71" transform="rotate(270 31.65 666.71)" text-anchor="middle" alignment-baseline="middle">Orng02</text>
+<text x="52.76" y="666.71" transform="rotate(270 52.76 666.71)" text-anchor="middle" alignment-baseline="middle">Orng03</text>
+<text x="73.86" y="666.71" transform="rotate(270 73.86 666.71)" text-anchor="middle" alignment-baseline="middle">Orng04</text>
+<text x="94.97" y="666.71" transform="rotate(270 94.97 666.71)" text-anchor="middle" alignment-baseline="middle">Orng05</text>
+<text x="116.07" y="666.71" transform="rotate(270 116.07 666.71)" text-anchor="middle" alignment-baseline="middle">Orng06</text>
+<text x="137.18" y="666.71" transform="rotate(270 137.18 666.71)" text-anchor="middle" alignment-baseline="middle">Orng07</text>
+<text x="158.28" y="666.71" transform="rotate(270 158.28 666.71)" text-anchor="middle" alignment-baseline="middle">Orng08</text>
+<text x="179.39" y="666.71" transform="rotate(270 179.39 666.71)" text-anchor="middle" alignment-baseline="middle">Orng09</text>
+<text x="200.49" y="666.71" transform="rotate(270 200.49 666.71)" text-anchor="middle" alignment-baseline="middle">Orng10</text>
+<text x="10.55" y="772.24" transform="rotate(270 10.55 772.24)" text-anchor="middle" alignment-baseline="middle">Orng11</text>
+<text x="31.65" y="772.24" transform="rotate(270 31.65 772.24)" text-anchor="middle" alignment-baseline="middle">Orng12</text>
+<text x="52.76" y="772.24" transform="rotate(270 52.76 772.24)" text-anchor="middle" alignment-baseline="middle">Orng13</text>
+<text x="73.86" y="772.24" transform="rotate(270 73.86 772.24)" text-anchor="middle" alignment-baseline="middle">Orng14</text>
+<text x="94.97" y="772.24" transform="rotate(270 94.97 772.24)" text-anchor="middle" alignment-baseline="middle">Orng15</text>
+<text x="116.07" y="772.24" transform="rotate(270 116.07 772.24)" text-anchor="middle" alignment-baseline="middle">Orng16</text>
+<text x="137.18" y="772.24" transform="rotate(270 137.18 772.24)" text-anchor="middle" alignment-baseline="middle">Orng17</text>
+<text x="158.28" y="772.24" transform="rotate(270 158.28 772.24)" text-anchor="middle" alignment-baseline="middle">Orng18</text>
+<text x="179.39" y="772.24" transform="rotate(270 179.39 772.24)" text-anchor="middle" alignment-baseline="middle">Orng19</text>
+<text x="200.49" y="772.24" transform="rotate(270 200.49 772.24)" text-anchor="middle" alignment-baseline="middle">Orng20</text>
+<text x="317.53" y="158.28" transform="rotate(270 317.53 158.28)" text-anchor="middle" alignment-baseline="middle">Prpl01</text>
+<text x="338.63" y="158.28" transform="rotate(270 338.63 158.28)" text-anchor="middle" alignment-baseline="middle">Prpl02</text>
+<text x="359.74" y="158.28" transform="rotate(270 359.74 158.28)" text-anchor="middle" alignment-baseline="middle">Prpl03</text>
+<text x="380.84" y="158.28" transform="rotate(270 380.84 158.28)" text-anchor="middle" alignment-baseline="middle">Prpl04</text>
+<text x="401.95" y="158.28" transform="rotate(270 401.95 158.28)" text-anchor="middle" alignment-baseline="middle">Prpl05</text>
+<text x="423.05" y="158.28" transform="rotate(270 423.05 158.28)" text-anchor="middle" alignment-baseline="middle">Prpl06</text>
+<text x="444.15" y="158.28" transform="rotate(270 444.15 158.28)" text-anchor="middle" alignment-baseline="middle">Prpl07</text>
+<text x="465.26" y="158.28" transform="rotate(270 465.26 158.28)" text-anchor="middle" alignment-baseline="middle">Prpl08</text>
+<text x="486.36" y="158.28" transform="rotate(270 486.36 158.28)" text-anchor="middle" alignment-baseline="middle">Prpl09</text>
+<text x="507.47" y="158.28" transform="rotate(270 507.47 158.28)" text-anchor="middle" alignment-baseline="middle">Prpl10</text>
+<text x="317.53" y="52.76" transform="rotate(270 317.53 52.76)" text-anchor="middle" alignment-baseline="middle">Prpl11</text>
+<text x="338.63" y="52.76" transform="rotate(270 338.63 52.76)" text-anchor="middle" alignment-baseline="middle">Prpl12</text>
+<text x="359.74" y="52.76" transform="rotate(270 359.74 52.76)" text-anchor="middle" alignment-baseline="middle">Prpl13</text>
+<text x="380.84" y="52.76" transform="rotate(270 380.84 52.76)" text-anchor="middle" alignment-baseline="middle">Prpl14</text>
+<text x="401.95" y="52.76" transform="rotate(270 401.95 52.76)" text-anchor="middle" alignment-baseline="middle">Prpl15</text>
+<text x="423.05" y="52.76" transform="rotate(270 423.05 52.76)" text-anchor="middle" alignment-baseline="middle">Prpl16</text>
+<text x="444.15" y="52.76" transform="rotate(270 444.15 52.76)" text-anchor="middle" alignment-baseline="middle">Prpl17</text>
+<text x="465.26" y="52.76" transform="rotate(270 465.26 52.76)" text-anchor="middle" alignment-baseline="middle">Prpl18</text>
+<text x="486.36" y="52.76" transform="rotate(270 486.36 52.76)" text-anchor="middle" alignment-baseline="middle">Prpl19</text>
+<text x="507.47" y="52.76" transform="rotate(270 507.47 52.76)" text-anchor="middle" alignment-baseline="middle">Prpl20</text>
+<text x="317.53" y="666.71" transform="rotate(270 317.53 666.71)" text-anchor="middle" alignment-baseline="middle">Pnk01</text>
+<text x="338.63" y="666.71" transform="rotate(270 338.63 666.71)" text-anchor="middle" alignment-baseline="middle">Pnk02</text>
+<text x="359.74" y="666.71" transform="rotate(270 359.74 666.71)" text-anchor="middle" alignment-baseline="middle">Pnk03</text>
+<text x="380.84" y="666.71" transform="rotate(270 380.84 666.71)" text-anchor="middle" alignment-baseline="middle">Pnk04</text>
+<text x="401.95" y="666.71" transform="rotate(270 401.95 666.71)" text-anchor="middle" alignment-baseline="middle">Pnk05</text>
+<text x="423.05" y="666.71" transform="rotate(270 423.05 666.71)" text-anchor="middle" alignment-baseline="middle">Pnk06</text>
+<text x="444.15" y="666.71" transform="rotate(270 444.15 666.71)" text-anchor="middle" alignment-baseline="middle">Pnk07</text>
+<text x="465.26" y="666.71" transform="rotate(270 465.26 666.71)" text-anchor="middle" alignment-baseline="middle">Pnk08</text>
+<text x="486.36" y="666.71" transform="rotate(270 486.36 666.71)" text-anchor="middle" alignment-baseline="middle">Pnk09</text>
+<text x="507.47" y="666.71" transform="rotate(270 507.47 666.71)" text-anchor="middle" alignment-baseline="middle">Pnk10</text>
+<text x="317.53" y="772.24" transform="rotate(270 317.53 772.24)" text-anchor="middle" alignment-baseline="middle">Pnk11</text>
+<text x="338.63" y="772.24" transform="rotate(270 338.63 772.24)" text-anchor="middle" alignment-baseline="middle">Pnk12</text>
+<text x="359.74" y="772.24" transform="rotate(270 359.74 772.24)" text-anchor="middle" alignment-baseline="middle">Pnk13</text>
+<text x="380.84" y="772.24" transform="rotate(270 380.84 772.24)" text-anchor="middle" alignment-baseline="middle">Pnk14</text>
+<text x="401.95" y="772.24" transform="rotate(270 401.95 772.24)" text-anchor="middle" alignment-baseline="middle">Pnk15</text>
+<text x="423.05" y="772.24" transform="rotate(270 423.05 772.24)" text-anchor="middle" alignment-baseline="middle">Pnk16</text>
+<text x="444.15" y="772.24" transform="rotate(270 444.15 772.24)" text-anchor="middle" alignment-baseline="middle">Pnk17</text>
+<text x="465.26" y="772.24" transform="rotate(270 465.26 772.24)" text-anchor="middle" alignment-baseline="middle">Pnk18</text>
+<text x="486.36" y="772.24" transform="rotate(270 486.36 772.24)" text-anchor="middle" alignment-baseline="middle">Pnk19</text>
+<text x="507.47" y="772.24" transform="rotate(270 507.47 772.24)" text-anchor="middle" alignment-baseline="middle">Pnk20</text>
+<text x="624.5" y="359.74" transform="rotate(270 624.5 359.74)" text-anchor="middle" alignment-baseline="middle">Grd01</text>
+<text x="645.61" y="359.74" transform="rotate(270 645.61 359.74)" text-anchor="middle" alignment-baseline="middle">Grd02</text>
+<text x="666.71" y="359.74" transform="rotate(270 666.71 359.74)" text-anchor="middle" alignment-baseline="middle">Grd03</text>
+<text x="687.82" y="359.74" transform="rotate(270 687.82 359.74)" text-anchor="middle" alignment-baseline="middle">Grd04</text>
+<text x="708.92" y="359.74" transform="rotate(270 708.92 359.74)" text-anchor="middle" alignment-baseline="middle">Grd05</text>
+<text x="624.5" y="465.26" transform="rotate(270 624.5 465.26)" text-anchor="middle" alignment-baseline="middle">Grd06</text>
+<text x="645.61" y="465.26" transform="rotate(270 645.61 465.26)" text-anchor="middle" alignment-baseline="middle">Grd07</text>
+<text x="666.71" y="465.26" transform="rotate(270 666.71 465.26)" text-anchor="middle" alignment-baseline="middle">Grd08</text>
+<text x="687.82" y="465.26" transform="rotate(270 687.82 465.26)" text-anchor="middle" alignment-baseline="middle">Grd09</text>
+<text x="708.92" y="465.26" transform="rotate(270 708.92 465.26)" text-anchor="middle" alignment-baseline="middle">Grd10</text>
+<text x="10.55" y="359.74" transform="rotate(270 10.55 359.74)" text-anchor="middle" alignment-baseline="middle">IN01</text>
+<text x="31.65" y="359.74" transform="rotate(270 31.65 359.74)" text-anchor="middle" alignment-baseline="middle">IN02</text>
+<text x="52.76" y="359.74" transform="rotate(270 52.76 359.74)" text-anchor="middle" alignment-baseline="middle">IN03</text>
+<text x="73.86" y="359.74" transform="rotate(270 73.86 359.74)" text-anchor="middle" alignment-baseline="middle">IN04</text>
+<text x="94.97" y="359.74" transform="rotate(270 94.97 359.74)" text-anchor="middle" alignment-baseline="middle">IN05</text>
+<text x="116.07" y="359.74" transform="rotate(270 116.07 359.74)" text-anchor="middle" alignment-baseline="middle">IN06</text>
+<text x="137.18" y="359.74" transform="rotate(270 137.18 359.74)" text-anchor="middle" alignment-baseline="middle">IN07</text>
+<text x="158.28" y="359.74" transform="rotate(270 158.28 359.74)" text-anchor="middle" alignment-baseline="middle">IN08</text>
+<text x="179.39" y="359.74" transform="rotate(270 179.39 359.74)" text-anchor="middle" alignment-baseline="middle">IN09</text>
+<text x="200.49" y="359.74" transform="rotate(270 200.49 359.74)" text-anchor="middle" alignment-baseline="middle">IN10</text>
+<text x="317.53" y="359.74" transform="rotate(270 317.53 359.74)" text-anchor="middle" alignment-baseline="middle">Out01</text>
+<text x="338.63" y="359.74" transform="rotate(270 338.63 359.74)" text-anchor="middle" alignment-baseline="middle">Out02</text>
+<text x="359.74" y="359.74" transform="rotate(270 359.74 359.74)" text-anchor="middle" alignment-baseline="middle">Out03</text>
+<text x="380.84" y="359.74" transform="rotate(270 380.84 359.74)" text-anchor="middle" alignment-baseline="middle">Out04</text>
+<text x="401.95" y="359.74" transform="rotate(270 401.95 359.74)" text-anchor="middle" alignment-baseline="middle">Out05</text>
+<text x="423.05" y="359.74" transform="rotate(270 423.05 359.74)" text-anchor="middle" alignment-baseline="middle">Out06</text>
+<text x="444.15" y="359.74" transform="rotate(270 444.15 359.74)" text-anchor="middle" alignment-baseline="middle">Out07</text>
+<text x="465.26" y="359.74" transform="rotate(270 465.26 359.74)" text-anchor="middle" alignment-baseline="middle">Out08</text>
+<text x="486.36" y="359.74" transform="rotate(270 486.36 359.74)" text-anchor="middle" alignment-baseline="middle">Out09</text>
+<text x="507.47" y="359.74" transform="rotate(270 507.47 359.74)" text-anchor="middle" alignment-baseline="middle">Out10</text>
+
+
+	
+</svg>

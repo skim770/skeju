@@ -1,0 +1,10 @@
+platform :ios, '9.0'
+
+use_frameworks!
+
+target 'Skeju' do
+	pod 'JTCalendar', '~> 2.0'
+	pod 'CalendarLib', '~> 1.0'
+	pod 'FBSDKCoreKit', '~> 4.10.1'
+	pod 'FBSDKLoginKit', '~> 4.10.1'
+end

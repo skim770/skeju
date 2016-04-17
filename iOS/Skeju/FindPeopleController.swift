@@ -19,6 +19,10 @@ class FindPeopleController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet var beginTimeView: UIView!
     @IBOutlet var endTimeView: UIView!
     @IBOutlet var foundFriendView: UIView!
+    @IBOutlet var datePickerContainerView: UIView!
+    
+    @IBOutlet var datePicker: UIDatePicker!
+    @IBOutlet var doneButton: UIButton!
     
     @IBOutlet var beginDate: UILabel!
     @IBOutlet var endDate: UILabel!
@@ -28,6 +32,7 @@ class FindPeopleController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet var endDay: UILabel!
     var beginAll: String = ""
     var endAll: String = ""
+    var isBegin: Bool = true
     
     @IBOutlet var fbFriendList: UITableView!
     var fbFriendsListData = [(name: String, id: String, profile: UIImage)]()
@@ -38,21 +43,26 @@ class FindPeopleController: UIViewController, UITableViewDelegate, UITableViewDa
     let screenHeight = UIScreen.mainScreen().bounds.height
     
     var dayPlannerController: DayPlannerController!
-
-    let datePickerContainer = UIView()
-    let datePicker : UIDatePicker = UIDatePicker()
     
     @IBAction func beginChange(sender: AnyObject) {
-        timeChange(true, pos: beginTime.center.x - beginTime.frame.width/2)
+        datePickerContainerView.hidden = false
+        isBegin = true
     }
     
     @IBAction func endChange(sender: AnyObject) {
-        timeChange(false, pos: endTime.center.x - endTime.frame.width/2)
+        datePickerContainerView.hidden = false
+        isBegin = false
+    }
+    
+    @IBAction func timeChange(sender: AnyObject) {
+        if isBegin {
+            dismissPickerBegin()
+        } else {
+            dismissPickerEnd()
+        }
     }
     
     override func viewDidLoad() {
-        //self.scene.scaleMode = SKSceneScaleMode.ResizeFill
-        
         super.viewDidLoad()
         dayPlannerController = DayPlannerController(eventStore: EKEventStore())
         dayPlannerController.calendar = NSCalendar.currentCalendar()
@@ -61,6 +71,8 @@ class FindPeopleController: UIViewController, UITableViewDelegate, UITableViewDa
         self.dayPlannerContainer.addSubview(dayPlannerController.view)
         dayPlannerController.view.frame = self.dayPlannerContainer.bounds
         dayPlannerController.didMoveToParentViewController(self)
+        
+        datePickerContainerView.hidden = true
         
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "MM:dd:yyyy:h:m"
@@ -74,33 +86,6 @@ class FindPeopleController: UIViewController, UITableViewDelegate, UITableViewDa
         fbFriendList.dataSource = self
         
         getFriends()
-    }
-    
-    func timeChange(i: Bool, pos: CGFloat) {
-        datePickerContainer.frame = CGRectMake(pos, self.view.frame.height/2, 320.0, 200.0)
-        datePickerContainer.backgroundColor = UIColor.whiteColor()
-        datePickerContainer.layer.cornerRadius = 15
-        
-        let pickerSize : CGSize = datePicker.sizeThatFits(CGSizeZero)
-        datePicker.frame = CGRectMake(0.0, 20, pickerSize.width, 180)
-        datePicker.datePickerMode = UIDatePickerMode.DateAndTime
-        datePickerContainer.addSubview(datePicker)
-        
-        let doneButton = UIButton()
-        doneButton.setTitle("Done", forState: UIControlState.Normal)
-        doneButton.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
-        if i {
-            doneButton.addTarget(self, action: Selector("dismissPickerBegin:"), forControlEvents: UIControlEvents.TouchUpInside)
-        } else {
-            doneButton.addTarget(self, action: Selector("dismissPickerEnd:"), forControlEvents: UIControlEvents.TouchUpInside)
-        }
-        
-        doneButton.frame = CGRectMake(250.0, 5.0, 70.0, 37.0)
-        
-        datePickerContainer.addSubview(doneButton)
-        
-        self.view.addSubview(datePickerContainer)
-        
     }
     
     func changeDate(day: UILabel, date: UILabel, time: UIButton, datePicked: NSDate) {
@@ -132,16 +117,13 @@ class FindPeopleController: UIViewController, UITableViewDelegate, UITableViewDa
         }
     }
     
-    func dismissPickerBegin(sender: UIButton) {
+    func dismissPickerBegin() {
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "MM:dd:yyyy:h:m"
         beginAll = dateFormatter.stringFromDate(datePicker.date)
         changeDate(beginDay, date: beginDate, time: beginTime, datePicked: datePicker.date)
         
-        for view in self.datePickerContainer.subviews {
-            view.removeFromSuperview()
-        }
-        datePickerContainer.removeFromSuperview()
+        datePickerContainerView.hidden = true
         
         if dateCheck() {
             endAll = dateFormatter.stringFromDate(datePicker.date)
@@ -150,16 +132,13 @@ class FindPeopleController: UIViewController, UITableViewDelegate, UITableViewDa
         getFriends()
     }
     
-    func dismissPickerEnd(sender: UIButton) {
+    func dismissPickerEnd() {
         let dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "dd:MM:yyyy:HH:mm"
+        dateFormatter.dateFormat = "MM:dd:yyyy:h:m"
         endAll = dateFormatter.stringFromDate(datePicker.date)
         changeDate(endDay, date: endDate, time: endTime, datePicked: datePicker.date)
         
-        for view in self.datePickerContainer.subviews {
-            view.removeFromSuperview()
-        }
-        datePickerContainer.removeFromSuperview()
+        datePickerContainerView.hidden = true
 
         if dateCheck() {
             beginAll = dateFormatter.stringFromDate(datePicker.date)

@@ -881,13 +881,49 @@
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6mA-FL-jUZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="168"/>
+                                        <subviews>
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="bG8-kP-UWS">
+                                                <rect key="frame" x="0.0" y="22" width="600" height="146"/>
+                                                <date key="date" timeIntervalSinceReferenceDate="482626338.359047">
+                                                    <!--2016-04-17 22:52:18 +0000-->
+                                                </date>
+                                            </datePicker>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPl-Qv-YmY">
+                                                <rect key="frame" x="546" y="0.0" width="46" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="mUO-q0-zTB"/>
+                                                    <constraint firstAttribute="width" constant="46" id="pfF-hu-zhZ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <state key="normal" title="Done"/>
+                                                <connections>
+                                                    <action selector="timeChange:" destination="7Kf-Sz-5SH" eventType="touchUpInside" id="epw-3Q-m70"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="bG8-kP-UWS" secondAttribute="trailing" id="4OH-8H-5t1"/>
+                                            <constraint firstItem="bG8-kP-UWS" firstAttribute="top" secondItem="6mA-FL-jUZ" secondAttribute="top" constant="22" id="CkY-rv-M4l"/>
+                                            <constraint firstItem="bG8-kP-UWS" firstAttribute="leading" secondItem="6mA-FL-jUZ" secondAttribute="leading" id="K9C-t6-Aus"/>
+                                            <constraint firstAttribute="bottom" secondItem="bG8-kP-UWS" secondAttribute="bottom" id="XKQ-vY-mA8"/>
+                                            <constraint firstItem="OPl-Qv-YmY" firstAttribute="trailing" secondItem="6mA-FL-jUZ" secondAttribute="trailingMargin" id="Ylv-SR-dbC"/>
+                                            <constraint firstItem="OPl-Qv-YmY" firstAttribute="top" secondItem="6mA-FL-jUZ" secondAttribute="top" id="jUW-9M-iwS"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="6yC-vL-LGa" firstAttribute="top" secondItem="vkA-Kl-rPR" secondAttribute="top" id="ITU-MQ-10p"/>
-                                    <constraint firstItem="6yC-vL-LGa" firstAttribute="leading" secondItem="vkA-Kl-rPR" secondAttribute="leading" id="agl-sM-sQ1"/>
-                                    <constraint firstAttribute="trailing" secondItem="6yC-vL-LGa" secondAttribute="trailing" id="hP0-sP-lZs"/>
-                                    <constraint firstAttribute="bottom" secondItem="6yC-vL-LGa" secondAttribute="bottom" id="xs7-5J-tqO"/>
+                                    <constraint firstItem="6mA-FL-jUZ" firstAttribute="leading" secondItem="6yC-vL-LGa" secondAttribute="leading" id="0Jo-Fs-hyL"/>
+                                    <constraint firstItem="6yC-vL-LGa" firstAttribute="leading" secondItem="vkA-Kl-rPR" secondAttribute="leading" id="BlP-XV-qIR"/>
+                                    <constraint firstAttribute="bottom" secondItem="6yC-vL-LGa" secondAttribute="bottom" id="J9A-kh-QBL"/>
+                                    <constraint firstItem="6yC-vL-LGa" firstAttribute="trailing" secondItem="6mA-FL-jUZ" secondAttribute="trailing" id="SvL-BD-hrc"/>
+                                    <constraint firstItem="6yC-vL-LGa" firstAttribute="bottom" secondItem="6mA-FL-jUZ" secondAttribute="bottom" id="ZOf-AA-UE5"/>
+                                    <constraint firstItem="6mA-FL-jUZ" firstAttribute="top" secondItem="vkA-Kl-rPR" secondAttribute="top" id="ntp-ME-M8L"/>
+                                    <constraint firstAttribute="trailing" secondItem="6mA-FL-jUZ" secondAttribute="trailing" id="o4H-nh-kMK"/>
+                                    <constraint firstItem="6yC-vL-LGa" firstAttribute="top" secondItem="6mA-FL-jUZ" secondAttribute="top" id="vVW-7q-mdx"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WbB-Rm-8ez" userLabel="Time View">
@@ -1034,7 +1070,10 @@
                         <outlet property="beginDay" destination="wSA-bW-9OD" id="6vg-Ip-cZJ"/>
                         <outlet property="beginTime" destination="VLh-lN-cLK" id="Zqr-bH-6Yt"/>
                         <outlet property="beginTimeView" destination="rDt-Wg-OBk" id="bHC-QJ-snl"/>
+                        <outlet property="datePicker" destination="bG8-kP-UWS" id="37t-bH-alU"/>
+                        <outlet property="datePickerContainerView" destination="6mA-FL-jUZ" id="Lm4-f9-V4J"/>
                         <outlet property="dayPlannerContainer" destination="mcf-jY-mWU" id="Dzq-x4-SAW"/>
+                        <outlet property="doneButton" destination="OPl-Qv-YmY" id="Vrd-Zm-5UP"/>
                         <outlet property="endDate" destination="utb-M2-HCN" id="4Ds-TW-92k"/>
                         <outlet property="endDay" destination="134-fp-RyX" id="lZo-gN-wZM"/>
                         <outlet property="endTime" destination="ecb-XM-aQf" id="ycR-tb-EQe"/>

@@ -35,6 +35,10 @@ class AddEventController: UIViewController, UITextFieldDelegate {
     var datePickerTouchedByStart: Bool?
     var startDate: NSDate?
     var endDate: NSDate?
+    var startD: String?
+    var startT: String?
+    var endD: String?
+    var endT: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,6 +56,13 @@ class AddEventController: UIViewController, UITextFieldDelegate {
         userName = userDefault.valueForKey("FBName") as! String
         
         titleLabel.text = "Schedule with \(friendName!)"
+        
+        if startD != nil {
+            startDateLabel.text = startD
+            startTimeLabel.text = startT
+            endDateLabel.text = endD
+            endTimeLabel.text = endT
+        }
     }
     
     @IBAction func scheduleBtnTouchUpInside(sender: AnyObject) {

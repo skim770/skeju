@@ -32,10 +32,14 @@ class FindPeopleController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet var endDay: UILabel!
     var beginAll: String = ""
     var endAll: String = ""
+    var begin: NSDate?
+    var end: NSDate?
     var isBegin: Bool = true
     
     @IBOutlet var fbFriendList: UITableView!
     var fbFriendsListData = [(name: String, id: String, profile: UIImage)]()
+    var friendName: String!
+    var friendFID: String!
     let userDefault = NSUserDefaults()
     
     
@@ -64,6 +68,8 @@ class FindPeopleController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBarHidden = true
+        
         dayPlannerController = DayPlannerController(eventStore: EKEventStore())
         dayPlannerController.calendar = NSCalendar.currentCalendar()
         
@@ -78,6 +84,9 @@ class FindPeopleController: UIViewController, UITableViewDelegate, UITableViewDa
         dateFormatter.dateFormat = "MM:dd:yyyy:h:m"
         beginAll = dateFormatter.stringFromDate(NSDate())
         endAll = dateFormatter.stringFromDate(NSDate())
+        
+        begin = NSDate()
+        end = NSDate()
         
         changeDate(beginDay, date: beginDate, time: beginTime, datePicked: NSDate())
         changeDate(endDay, date: endDate, time: endTime, datePicked: NSDate())
@@ -99,18 +108,18 @@ class FindPeopleController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func dateCheck() -> Bool {
-        let endDates = endAll.componentsSeparatedByString(":")
-        let beginDates = beginAll.componentsSeparatedByString(":")
+        let endArray = endAll.componentsSeparatedByString(":")
+        let beginArray = beginAll.componentsSeparatedByString(":")
         
-        if beginDates[2] > endDates[2] {
+        if beginArray[2] > endArray[2] {
             return true
-        } else if beginDates[0] > endDates[0] {
+        } else if beginArray[0] > endArray[0] {
             return true
-        } else if beginDates[1] > endDates[1] {
+        } else if beginArray[1] > endArray[1] {
             return true
-        } else if beginDates[3] > endDates[3] {
+        } else if beginArray[3] > endArray[3] {
             return true
-        } else if beginDates[4] > endDates[4] {
+        } else if beginArray[4] > endArray[4] {
             return true
         } else {
             return false
@@ -121,6 +130,7 @@ class FindPeopleController: UIViewController, UITableViewDelegate, UITableViewDa
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "MM:dd:yyyy:h:m"
         beginAll = dateFormatter.stringFromDate(datePicker.date)
+        begin = datePicker.date
         changeDate(beginDay, date: beginDate, time: beginTime, datePicked: datePicker.date)
         
         datePickerContainerView.hidden = true
@@ -136,6 +146,7 @@ class FindPeopleController: UIViewController, UITableViewDelegate, UITableViewDa
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "MM:dd:yyyy:h:m"
         endAll = dateFormatter.stringFromDate(datePicker.date)
+        end = datePicker.date
         changeDate(endDay, date: endDate, time: endTime, datePicked: datePicker.date)
         
         datePickerContainerView.hidden = true
@@ -193,5 +204,30 @@ class FindPeopleController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return CGFloat(50)
+    }
+    
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.friendName = fbFriendsListData[indexPath.row].name
+        self.friendFID = fbFriendsListData[indexPath.row].id
+        self.performSegueWithIdentifier("AddNewEventSegue", sender: self)
+    }
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "AddNewEventSegue" {
+            let addEventController = segue.destinationViewController as! AddEventController
+            addEventController.friendName = friendName
+            addEventController.friendFID = friendFID
+            addEventController.startDate = begin
+            addEventController.endDate = end
+            
+            let beginArray = beginAll.componentsSeparatedByString(":")
+            let endArray = endAll.componentsSeparatedByString(":")
+            
+            addEventController.startD = beginDate.text! + ", " + beginArray[2]
+            addEventController.startT = beginTime.titleLabel?.text
+            addEventController.endD = endDate.text! + ", " + endArray[2]
+            addEventController.endT = endTime.titleLabel?.text
+        }
     }
 }

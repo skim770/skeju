@@ -75,7 +75,7 @@ class AddEventController: UIViewController, UITextFieldDelegate {
         
         let postReq = NSMutableURLRequest(URL: NSURL(string: "http://api-skeju.rhcloud.com/event")!)
         postReq.HTTPMethod = "POST"
-        let postString = "eventIdentifier=\(identifier!)&userId=\(userFID)&otherId=\(friendFID!)&availability=\(availability)&startDate=\(startDate!)&endDate=\(endDate!)&allDay=\(allDay)&isDetached=\(isDetached)&occurenceDate=\(occurrenceDate)&organizer=nil&status=\(status)"
+        let postString = "eventIdentifier=\(identifier)&userId=\(userFID)&otherId=\(friendFID)&availability=\(availability)&startDate=\(startDate)&endDate=\(endDate)&allDay=\(allDay)&isDetached=\(isDetached)&occurenceDate=\(occurrenceDate)&organizer=nil&status=\(status)"
         postReq.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
         let task = NSURLSession.sharedSession().dataTaskWithRequest(postReq) { data, response, error in
             guard error == nil && data != nil else {
